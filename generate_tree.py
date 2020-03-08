@@ -1,6 +1,6 @@
 from graphviz import Digraph
 
-class ClaysNode():
+class Node():
   def __init__(self, name, idd):
     self._name = name
     self._id = idd
@@ -83,9 +83,9 @@ class Tree():
 
     # Create the new node
     if leaf:
-      new_node = ClaysNode(leaf, len(self._nodes))
+      new_node = Node(leaf, len(self._nodes))
     else:
-      new_node = ClaysNode(name, len(self._nodes))
+      new_node = Node(name, len(self._nodes))
 
     if not self._root:
       # Set this element as the root of the tree
@@ -118,7 +118,7 @@ class Tree():
         #print('increasing depth...')
       elif cdepth < self._depth:
         # Find the parent node that we pivot off of
-        new_parent = self.findParentClaysNode(self._current_parent, self._depth - cdepth + 1)
+        new_parent = self.findParentNode(self._current_parent, self._depth - cdepth + 1)
 
         # Add node and create connection
         self._nodes.append(new_node)
@@ -140,7 +140,7 @@ class Tree():
     self._depth = cdepth
     self._last_added = new_node
 
-  def findParentClaysNode(self, parent, depth):
+  def findParentNode(self, parent, depth):
     # Iterate through the connections list and find who points to the parent
     while depth > 0:
       if len(self._parent_stack) > 0:
