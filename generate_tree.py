@@ -1,5 +1,155 @@
 from graphviz import Digraph
 
+class Node():
+  def __init__(self, name, idd):
+    self._name = name
+    self._id = idd
+
+  def __str__(self):
+    return str(self._name) + str(self._id)
+
+class Connection():
+  def __init__(self, origin, target):
+    self._origin = origin
+    self._target = target
+
+  def __str__(self):
+    return str(self._origin) + ' -> ' + str(self._target)
+
+  def getTarget(self):
+    return self._target
+
+  def getOrigin(self):
+    return self._origin
+
+
+class Tree():
+  def __init__(self):
+    self._conns = []
+    self._nodes = []
+    self._root = None
+    self._current_parent = None
+    self._last_added = None
+    self._depth = 0
+    self._node_count = 0
+
+  def __str__(self):
+    # Print the tree's connections
+    out = ''
+    for conn in self._conns:
+      out += str(conn) + '\n'
+    return out 
+
+  def addLine(self, line):
+    # Convert line to an array with no empty strings
+    line_arr = line.split(' ')
+    line_arr[:] = [val for val in line_arr if val != ''] 
+   
+    # Get current depth
+    cdepth = line_arr.count('|')
+
+    name = line_arr[cdepth]
+    val = line_arr[cdepth + 2]
+
+    # Create the new node
+    new_node = Node(name, len(self._nodes))
+
+    if not self._root:
+      # Set this element as the root of the tree
+
+      # Add the root node to the tree
+      self._root = new_node
+      self._nodes.append(self._root)
+      self._last_added = self._root
+
+      self._current_parent = self._root
+    else:
+      if cdepth > self._depth:
+        # Point the current_parent to the last added node
+        self._nodes.append(new_node)
+        self._conns.append( Connection(self._last_added, new_node) )
+        
+        # Update current parent
+        self._current_parent = new_node
+
+        print('increasing depth...')
+      elif cdepth < self._depth:
+        # Find the parent node that we pivot off of
+        new_parent = self.findParentNode(self._current_parent, self._depth - cdepth)
+
+        # Add node and create connection
+        self._nodes.append(new_node)
+        self._conns.append( Connection( new_parent , new_node) )
+
+        print('parent of {} is {}'.format(new_node, new_parent))
+
+        # Set the current parent as the new parent
+        self._current_parent = new_parent
+
+        print('decreasing depth...')
+      else: 
+        # Add the new node to the tree 
+        self._nodes.append(new_node)
+        self._conns.append( Connection(self._current_parent, new_node) )
+
+        print('same depth...')
+
+    self._depth = cdepth
+    self._last_added = new_node
+
+  def findParentNode(self, parent, depth):
+    # Iterate through the connections list and find who points to the parent
+    #depth -= 1
+    while depth > 0:
+      for conn in self._conns:
+        target = conn.getOrigin()
+        print('at here: {}'.format(target))
+        if target == parent:
+          parent = target
+          depth -= 1
+          break
+    return parent
+  
+      
+
+def create_tree():
+  """graph = Digraph(comment='The Round Table')
+  graph.node('A', 'King Arthur')
+  graph.node('B', 'Sir who the fukc')
+  graph.node('C', 'test 3')
+
+  #graph.edges(['AB', 'AL'])
+  graph.edge('A', 'B', label='test label!')
+  graph.edge('A', 'L', label='test label 2!')
+  graph.edge('B', 'L', constraint='false')
+  
+  print(graph.source)"""
+  # Create tree object
+  tree = Tree() 
+  arr = ascii_tree.splitlines() 
+
+  counter = 0
+  for line in arr:
+    #print('-------------------------------------------------------------------')
+    tree.addLine(line)
+    #print(tree)
+    if counter > 20:
+      break
+    counter += 1
+
+  print(tree)
+
+  # Graph object
+  graph = Digraph(comment='ID3 Tree on breast-cancer.arff')
+  
+  return graph
+
+def main():
+  tree = create_tree()
+
+  #tree.render('test-output.gv', format='png', view=True)
+
+
 # ASCII Decision Tree retrieved from WEKA
 ascii_tree = """deg-malig = 1
 |  tumor-size = 0-4: no-recurrence-events
@@ -441,117 +591,5 @@ deg-malig = 3
 |  inv-nodes = 33-35: null
 |  inv-nodes = 36-39: null
 """
-
-def create_tree():
-  """graph = Digraph(comment='The Round Table')
-  graph.node('A', 'King Arthur')
-  graph.node('B', 'Sir who the fukc')
-  graph.node('C', 'test 3')
-
-  #graph.edges(['AB', 'AL'])
-  graph.edge('A', 'B', label='test label!')
-  graph.edge('A', 'L', label='test label 2!')
-  graph.edge('B', 'L', constraint='false')
-  
-  print(graph.source)"""
-
-  # Graph object
-  graph = Digraph(comment='ID3 Tree on breast-cancer.arff')
-
-  # Loop over the given tree and dynamically add the nodes to the tree
-  arr = ascii_tree.splitlines() 
-  depth = 0
-
-  # The first line contains our root element
-  first_line_arr = arr.pop(0).split(' ')  
-  graph.node(first_line_arr[0], first_line_arr[0])
-
-  # Keep track of current parent node
-  parent1 = first_line_arr[0]
-  label1 = first_line_arr[-1]
-  parent_stack = [parent1]
-  label_stack = [label1]
-
-  #print('parent: {}'.format(parent))
-  #print('first line arr: {}'.format(first_line_arr))
-
-  counter = 0
-
-  for line in arr:
-    line_arr = line.split(' ')
-    #line_arr.remove('')
-    line_arr[:] = [val for val in line_arr if val != '']
-    # Don't do this next step is we point to null
-    if line_arr[-1] != 'null':
-
-      # Figure out how deep we are into the tree
-      new_depth = line.count('|')
-      if new_depth > depth:
-        # Add new connection from parent to current
-        name = line_arr[depth + 1]
-        print(line_arr)
-        graph.node(name, name)
-        graph.edge(parent_stack[-1], name, label=label_stack[-1])
-
-        if line_arr[-1] == 'recurrence-events' or line_arr[-1] == 'no-recurrence-events':
-          # Create connection from current node to classification
-          classif = line_arr[-1]
-          graph.node(classif + str(counter), classif)
-          graph.edge(name, classif + str(counter), label=line_arr[depth + 3][:-1])
-          counter += 1
-        else:
-          ## Push current info onto the stack
-          label = line_arr[-1] #[:-1]
-          label_stack.append(label)
-
-        parent_stack.append(name)
-        #print(parent_stack)
-        #print(label_stack)
-
-        depth = new_depth
-        
-      elif new_depth < depth:
-        # Add a new node to the graph
-        break
-
-      else:
-        if line_arr[-1] == 'recurrence-events' or line_arr[-1] == 'no-recurrence-events':
-          # Create connection from current node to classification
-          classif = line_arr[-1]
-          graph.node(classif + str(counter), classif)
-          graph.edge(name, classif + str(counter), label=line_arr[depth + 2][:-1])
-          counter += 1
-        else:
-          ## Push current info onto the stack
-          label = line_arr[-1]
-          label_stack.append(label)
-
-        """
-        # We are on the same depth  
-        name = line_arr[depth + 1]
-        print(line_arr)
-        graph.node(name, name)
-        graph.edge(parent_stack[-1], name, label=label_stack[-1])
-
-        if line_arr[-1] == 'recurrence-events' or line_arr[-1] == 'no-recurrence-events':
-          # Create connection from current node to classification
-          classif = line_arr[-1]
-          graph.node(classif + str(counter), classif)
-          graph.edge(name, classif + str(counter), label=line_arr[depth + 3][:-1])
-          counter += 1
-        """
-
-      #depth = line.count('|')
-
-    print(depth)
-    
-  
-  return graph
-
-def main():
-  tree = create_tree()
-
-  tree.render('test-output.gv', format='png', view=True)
-
 
 main()
