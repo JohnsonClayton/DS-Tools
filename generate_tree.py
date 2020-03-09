@@ -46,6 +46,7 @@ class Tree():
     self._depth = 0
     self._node_count = 0
     self._parent_stack = []
+    self._label_stack = []
 
   def __str__(self):
     # Print the tree's connections
@@ -54,11 +55,19 @@ class Tree():
       out += str(conn) + '\n'
     return out 
 
+  def shouldMerge(self, parent, parent_label, name):
+    ret = None
+    for conn in self._conns:
+      target = conn.getTarget()
+      if target.getName() == name and conn.getLabel() == parent_label:
+        ret = target
+    return ret
+
   def addLine(self, line):
-    print('Stack: ')
-    for node in self._parent_stack:
-      print(node)
-    print('-------------')
+    #print('Stack: ')
+    #for node in self._parent_stack:
+    #  print(node)
+    #print('-------------')
 
     # Convert line to an array with no empty strings
     line_arr = line.split(' ')
@@ -67,6 +76,7 @@ class Tree():
     # Get current depth
     cdepth = line_arr.count('|')
 
+    # We know these will be in the same place every time
     name = line_arr[cdepth]
     val = ''
     if line_arr[cdepth + 2][-1] == ':':
@@ -74,6 +84,7 @@ class Tree():
     else:
       val = line_arr[cdepth + 2]
 
+    # This will let us figure out if we are at a leaf node or not
     leaf = None
     if line_arr[-1] == 'recurrence-events' or line_arr[-1] == 'no-recurrence-events':
       #print('leaf!')
@@ -81,88 +92,55 @@ class Tree():
     elif line_arr[-1] == 'null':
       return
 
-    # Create the new node
+    # Switch changes to the tree based on whether we are dealing with a branch or a leaf
     if leaf:
-      new_node = Node(leaf, len(self._nodes))
+      # This line is a leaf, which means we create more nodes
+      #   Ex: `|  tumor-size = 0-4: no-recurrence-events`
+      print('Leaf!')
+
+      # Create no-recurrence-events node
+      new_leaf = Node(leaf, len(self._nodes))
+      self._nodes.append(new_leaf)
+
+      # Create conn from parent with parent label -> tumor-size
+      # Get the parent information
+      plabel = self._label_stack[-1]
+      prnt  = self._parent_stack[-1]
+
+      # If the parent points to another node with the same name as this one (tumor-size) and the same value (0-4), then don't create a new node or connection
+      new_branch = self.shouldMerge(prnt, plabel, name)
+      if not new_branch:
+        # Create tumor-size node
+        new_branch = Node(name, len(self._nodes))
+        self._nodes.append(new_branch) # Adds the new node to the list of nodes
+
+        # Create the connection
+        conn = Connection(prnt, new_branch, plabel)
+        self._conns.append(conn)
+
+
+      # Create conn from tumor-size with tumor-size label (0-4) -> no-recurrence-events
+      conn = Connection(new_branch, new_leaf, val)
+      self._conns.append(conn)
+
     else:
-      new_node = Node(name, len(self._nodes))
+      # This line is a branch, which requires more work for the stack
+      #   Ex: `|  tumor-size = 15-19`
+      print('Branch!')
 
-    if not self._root:
-      # Set this element as the root of the tree
+      # Create tumor-size node
+      new_branch = Node(name, len(self._nodes))
+      self._nodes.append(new_branch)
 
-      # Add the root node to the tree
-      self._root = new_node
-      self._nodes.append(self._root)
-      self._last_added = self._root
+      # Append the tumor-size node to the parent_stack
+      self._parent_stack.append(new_branch)
 
-      self._current_parent = self._root
+      # Append the tumor-size label (15-19) to the label_stack
+      self._label_stack.append(val)
 
-      self._parent_stack.append(self._root)
-    elif cdepth == 0:
-      print('reached!')
 
-      self._nodes.append(new_node)
-      self._conns.append( Connection(self._root, new_node, val) )
-
-      self._current_parent = self._last_added
-      self._parent_stack.append(new_node)
-    else:
-      if cdepth > self._depth:
-        # Point the current_parent to the last added node
-        self._nodes.append(new_node)
-        self._conns.append( Connection(self._last_added, new_node, val) )
-
-        self._current_parent = self._last_added
-        self._parent_stack.append(new_node)
-
-        #print('increasing depth...')
-      elif cdepth < self._depth:
-        # Find the parent node that we pivot off of
-        new_parent = self.findParentNode(self._current_parent, self._depth - cdepth + 1)
-
-        # Add node and create connection
-        self._nodes.append(new_node)
-        self._conns.append( Connection( new_parent , new_node, val) )
-
-        #print('parent of {} is {}'.format(new_node, new_parent))
-
-        # Set the current parent as the new parent
-        self._current_parent = new_parent
-
-        #print('decreasing depth...')
-      else: 
-        # Add the new node to the tree 
-        self._nodes.append(new_node)
-        self._conns.append( Connection(self._current_parent, new_node, val) )
-
-        #print('same depth...')
-
-    self._depth = cdepth
-    self._last_added = new_node
-
-  def findParentNode(self, parent, depth):
-    # Iterate through the connections list and find who points to the parent
-    while depth > 0:
-      if len(self._parent_stack) > 0:
-        parent = self._parent_stack.pop(-1)
-        depth -= 1
-      else:
-        break
-    return parent
-
+  # Creates a Graphviz DiGraph object and returns to the caller
   def createGraph(self):
-    """graph = Digraph(comment='The Round Table')
-    graph.node('A', 'King Arthur')
-    graph.node('B', 'Sir who the fukc')
-    graph.node('C', 'test 3')
-
-    #graph.edges(['AB', 'AL'])
-    graph.edge('A', 'B', label='test label!')
-    graph.edge('A', 'L', label='test label 2!')
-    graph.edge('B', 'L', constraint='false')
-  
-    print(graph.source)"""
-
     # Graph object
     graph = Digraph(comment='ID3 Tree on breast-cancer.arff')
     
@@ -182,16 +160,17 @@ def create_tree():
   tree = Tree() 
   arr = ascii_tree.splitlines() 
 
-  #counter = 0
+  counter = 0
   for line in arr:
     #print('-------------------------------------------------------------------')
     tree.addLine(line)
     #print(tree)
-    #if counter > 20:
-    #  break
-    #counter += 1
+    if counter > 20:
+      break
+    counter += 1
 
   print(tree)
+
   graph = tree.createGraph()
 
   return graph
