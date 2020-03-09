@@ -92,6 +92,11 @@ class Tree():
     elif line_arr[-1] == 'null':
       return
 
+    # If the depth has decreased, we need to pop off the unneeded elements
+    while len(self._parent_stack) > cdepth:
+      del self._parent_stack[-1]
+      del self._label_stack[-1]
+
     # Switch changes to the tree based on whether we are dealing with a branch or a leaf
     if leaf:
       # This line is a leaf, which means we create more nodes
@@ -128,9 +133,27 @@ class Tree():
       #   Ex: `|  tumor-size = 15-19`
       print('Branch!')
 
-      # Create tumor-size node
-      new_branch = Node(name, len(self._nodes))
-      self._nodes.append(new_branch)
+      new_branch = None
+
+      # If there are nodes in the parent stack, point to me!
+      if len(self._parent_stack) > 0:
+        prnt = self._parent_stack[-1]
+        plabel = self._label_stack[-1]        
+        new_branch = self.shouldMerge(prnt, plabel, name)
+        if not new_branch:
+          # Create tumor-size node
+          new_branch = Node(name, len(self._nodes))
+          self._nodes.append(new_branch) # Adds the new node to the list of nodes
+          prnt = self._parent_stack[-1]
+          plabel = self._label_stack[-1]
+
+          # Create connection
+          conn = Connection(prnt, new_branch, plabel)
+          self._conns.append(conn)
+      else:
+        # Create tumor-size node
+        new_branch = Node(name, len(self._nodes))
+        self._nodes.append(new_branch)
 
       # Append the tumor-size node to the parent_stack
       self._parent_stack.append(new_branch)
