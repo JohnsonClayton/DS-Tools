@@ -6,7 +6,7 @@ class Node():
     self._id = idd
 
   def __str__(self):
-    return str(self._name) #+ str(self._id)
+    return str(self._name) 
 
   def getID(self):
     return str(self._id)
@@ -55,6 +55,8 @@ class Tree():
       out += str(conn) + '\n'
     return out 
 
+  # This method determines whether or not a given node should be merged with another to reduce redundancy
+  #  Returns the node that should be used instead or None if we are all clear to add a new node
   def shouldMerge(self, parent, parent_label, name):
     ret = None
     for conn in self._conns:
@@ -63,12 +65,8 @@ class Tree():
         ret = target
     return ret
 
+  # This method will parse a given line and add it to the tree (note that order DOES matter when importing these lines from WEKA)
   def addLine(self, line):
-    #print('Stack: ')
-    #for node in self._parent_stack:
-    #  print(node)
-    #print('-------------')
-
     # Convert line to an array with no empty strings
     line_arr = line.split(' ')
     line_arr[:] = [val for val in line_arr if val != ''] 
@@ -101,7 +99,7 @@ class Tree():
     if leaf:
       # This line is a leaf, which means we create more nodes
       #   Ex: `|  tumor-size = 0-4: no-recurrence-events`
-      print('Leaf!')
+      #print('Leaf!')
 
       # Create no-recurrence-events node
       new_leaf = Node(leaf, len(self._nodes))
@@ -131,7 +129,7 @@ class Tree():
     else:
       # This line is a branch, which requires more work for the stack
       #   Ex: `|  tumor-size = 15-19`
-      print('Branch!')
+      #print('Branch!')
 
       new_branch = None
 
@@ -151,9 +149,15 @@ class Tree():
           conn = Connection(prnt, new_branch, plabel)
           self._conns.append(conn)
       else:
-        # Create tumor-size node
-        new_branch = Node(name, len(self._nodes))
-        self._nodes.append(new_branch)
+        # If the root node isn't already defined...
+        if not self._root:
+          # Create tumor-size node
+          new_branch = Node(name, len(self._nodes))
+          self._root = new_branch
+          self._nodes.append(new_branch)
+        # Otherwise, it is and we set the new branches
+        else:
+          new_branch = self._root
 
       # Append the tumor-size node to the parent_stack
       self._parent_stack.append(new_branch)
@@ -168,11 +172,11 @@ class Tree():
     graph = Digraph(comment='ID3 Tree on breast-cancer.arff')
     
     for node in self._nodes:
-      print('Adding node {}'.format(node))
+      #print('Adding node {}'.format(node))
       graph.node(node.getID(), node.getName())
 
     for conn in self._conns:
-      print('Addding conn {}'.format(conn))
+      #print('Addding conn {}'.format(conn))
       graph.edge( (conn.getOrigin()).getID(), (conn.getTarget()).getID(), label=conn.getLabel() )
 
     return graph
@@ -183,16 +187,10 @@ def create_tree():
   tree = Tree() 
   arr = ascii_tree.splitlines() 
 
-  counter = 0
   for line in arr:
-    #print('-------------------------------------------------------------------')
     tree.addLine(line)
-    #print(tree)
-    if counter > 20:
-      break
-    counter += 1
 
-  print(tree)
+  #print(tree)
 
   graph = tree.createGraph()
 
