@@ -1,4 +1,4 @@
-/*  Instance-based Classifier 1 created by Clayton Johnson
+/*  Instance-based Classifier 1 implemented by Clayton Johnson
  *    as described in Aha's Paper: Instance-Based Learning Algorithm
  *
  *
