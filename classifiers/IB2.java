@@ -57,12 +57,16 @@ public class IB2 extends AbstractClassifier {
 		trainingData = new Instances(trainingData);
 		trainingData.deleteWithMissingClass();
 
+
 		// For every training instance, we only remember it if we misclassify it
+		//
+		// We need to add this first instance to have at least one element in the search space
 		m_NNSearch.setInstances(new Instances(trainingData, 1, 1));
+		Instances dynamicTrainingData = new Instances(trainingData, 1, 1);
 		for (Instance train_x : trainingData) {
 			Instances neighbours = m_NNSearch.kNearestNeighbours(train_x, m_K);
 
-			// Classify the training instance
+			// Classify the training instance <- This would be better to create and implement the classify function here
 			double[] dist = new double[train_x.numClasses()];
 			for (Instance neighbour : neighbours) {
 				if (train_x.classAttribute().isNominal()) {
@@ -81,21 +85,25 @@ public class IB2 extends AbstractClassifier {
 			}
 
 			//System.out.println("Training instance: " + train_x.toString());
-			//System.out.println("Classes: " + train_x.classAttribute().toString());
-			//System.out.println("Classified as: " + train_x.classAttribute().value(max).toString());
+			//System.out.println("Length of CD: " + m_NNSearch.getInstances().numInstances());
+			//System.out.println("Options: " + train_x.classAttribute().toString());
 			//System.out.println("Class is: " + train_x.classAttribute().value((int)train_x.classValue()).toString());
-			////System.out.println(train_x.classValue());
-			////System.out.println(Arrays.toString(dist));
+			//System.out.println("Classified as: " + train_x.classAttribute().value(max).toString());
+			//System.out.println(train_x.classValue());
+			//System.out.println(Arrays.toString(dist));
 
 			String clss = train_x.classAttribute().value(max);
 			String pred = train_x.classAttribute().value( (int) train_x.classValue() );
 
 			if (clss != "" && pred != "" && clss != pred) {
-				m_NNSearch.update(train_x);
-				//System.out.println("Incorrect!");
+				//m_NNSearch.update(train_x);
+				dynamicTrainingData.add(train_x);
+				System.out.println("Incorrect!");
 			} else {
-				//System.out.println("Correct!");
+				System.out.println("Correct!");
 			}
+
+			m_NNSearch.setInstances(dynamicTrainingData);
 
 			
 		}
