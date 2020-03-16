@@ -80,18 +80,21 @@ public class IB2 extends AbstractClassifier {
 				}
 			}
 
-			System.out.println("Training instance: " + train_x.toString());
-			System.out.println("Classes: " + train_x.classAttribute().toString());
-			System.out.println("Classified as: " + train_x.classAttribute().value(max).toString());
-			System.out.println("Class is: " + train_x.classAttribute().value((int)train_x.classValue()).toString());
-			//System.out.println(train_x.classValue());
-			//System.out.println(Arrays.toString(dist));
+			//System.out.println("Training instance: " + train_x.toString());
+			//System.out.println("Classes: " + train_x.classAttribute().toString());
+			//System.out.println("Classified as: " + train_x.classAttribute().value(max).toString());
+			//System.out.println("Class is: " + train_x.classAttribute().value((int)train_x.classValue()).toString());
+			////System.out.println(train_x.classValue());
+			////System.out.println(Arrays.toString(dist));
 
-			if (train_x.classAttribute().value(max) != train_x.classAttribute().value( (int) train_x.classValue() )) {
+			String clss = train_x.classAttribute().value(max);
+			String pred = train_x.classAttribute().value( (int) train_x.classValue() );
+
+			if (clss != "" && pred != "" && clss != pred) {
 				m_NNSearch.update(train_x);
-				System.out.println("Incorrect!");
+				//System.out.println("Incorrect!");
 			} else {
-				System.out.println("Correct!");
+				//System.out.println("Correct!");
 			}
 
 			
