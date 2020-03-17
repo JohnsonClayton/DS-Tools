@@ -49,9 +49,13 @@ import weka.core.WeightedInstancesHandler;
 import weka.core.neighboursearch.LinearNNSearch;
 import weka.core.neighboursearch.NearestNeighbourSearch;
 
-public class IB2 extends AbstractClassifier {
+public class IB3 extends AbstractClassifier {
 	protected int m_K = 1;
 	protected NearestNeighbourSearch m_NNSearch = new LinearNNSearch();
+
+	private Instances getAcceptableNeighbours(Instance x) throws Exception {
+		return m_NNSearch.kNearestNeighbours(x, m_K);
+	}
 
 	public void buildClassifier(Instances trainingData) throws Exception {
 		trainingData = new Instances(trainingData);
@@ -64,7 +68,7 @@ public class IB2 extends AbstractClassifier {
 		m_NNSearch.setInstances(new Instances(trainingData, 1, 1));
 		Instances dynamicTrainingData = new Instances(trainingData, 1, 1);
 		for (Instance train_x : trainingData) {
-			Instances neighbours = m_NNSearch.kNearestNeighbours(train_x, m_K);
+			Instances neighbours = getAcceptableNeighbours(train_x); //m_NNSearch.kNearestNeighbours(train_x, m_K);
 
 			// Classify the training instance <- This would be better to create and implement the classify function here
 			double[] dist = new double[train_x.numClasses()];
