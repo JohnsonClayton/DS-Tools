@@ -25,6 +25,7 @@ import java.util.Collections;
 import java.util.Enumeration;
 import java.util.Vector;
 import java.util.Arrays;
+import java.util.HashMap;
 
 import weka.classifiers.AbstractClassifier;
 import weka.classifiers.UpdateableClassifier;
@@ -52,9 +53,54 @@ import weka.core.neighboursearch.NearestNeighbourSearch;
 public class IB3 extends AbstractClassifier {
 	protected int m_K = 1;
 	protected NearestNeighbourSearch m_NNSearch = new LinearNNSearch();
+	protected HashMap neighbourStats = new HashMap();
+	protected Instances dynamicTrainingInstances;
+
+	private void initCD(Instances train) throws Exception {
+		// Take the first element in the training data and add it to the dynamicTrainingInstances list
+		dynamicTrainingInstances = new Instances(train, 1, 1);
+	}
+
+	private void addInstancetoCD(Instance x) throws Exception {
+		// Add this element to the NNSearch object and create a way to keep track of it's stats during training
+		if (dynamicTrainingInstances != null) {
+			dynamicTrainingInstances.add(x);
+			m_NNSearch.setInstances(dynamicTrainingInstances);
+		} else {
+			System.err.println("dynamicTrainingInstances is null!");
+		}
+	}
 
 	private Instances getAcceptableNeighbours(Instance x) throws Exception {
-		return m_NNSearch.kNearestNeighbours(x, m_K);
+		// This function will return the neighbours that have good track records so far (90%) accuracy
+		//   The heuristics used are presented in Reduction Techniques for Instance-Based Learning Algorithms by Wilson-Martinez (2000)
+		//   Formula for the upper and lower bounds of the conf. interval is:
+		//
+		//   p + (z^2 / 2n) +- z*sqrt(q)
+		//   --------------------------  , where q = ( p*(1-p)/n ) + (z^2 / 4*n^2) )
+		//          1 + (z^2 / n)
+		//
+		//   Accuracy:
+		//     n is the number of classification attempts since introduction of instance to S (CD in Aha's work)
+		//     p is the accuracy of those attempts ( correct classification / n)
+		//
+		//   Frequency:
+		//     n is the number of previously processed instances
+		//     p is the frequency (proportion of instances so far that are the same class)
+		//
+		//   z is the confidence (0.9 for acceptance and 0.7 for dropping) in both cases
+
+		Instances neighbours = m_NNSearch.kNearestNeighbours(x, m_K);
+
+		for (Instance neighbour : neighbours) {
+			// Remove the neighbour instances that do not meet the specifications:
+			//   Lower bound of acc is higher than the upper bound of the frequency of its class
+
+			
+
+		}
+
+		return neighbours;
 	}
 
 	public void buildClassifier(Instances trainingData) throws Exception {
@@ -66,7 +112,7 @@ public class IB3 extends AbstractClassifier {
 		//
 		// We need to add this first instance to have at least one element in the search space
 		m_NNSearch.setInstances(new Instances(trainingData, 1, 1));
-		Instances dynamicTrainingData = new Instances(trainingData, 1, 1);
+		initCD(trainingData);
 		for (Instance train_x : trainingData) {
 			Instances neighbours = getAcceptableNeighbours(train_x); //m_NNSearch.kNearestNeighbours(train_x, m_K);
 
@@ -101,13 +147,13 @@ public class IB3 extends AbstractClassifier {
 
 			if (clss != "" && pred != "" && clss != pred) {
 				//m_NNSearch.update(train_x);
-				dynamicTrainingData.add(train_x);
+				dynamicTrainingInstances.add(train_x);
 				/*System.out.println("Incorrect!");
 			} else {
 				System.out.println("Correct!");*/
 			}
 
-			m_NNSearch.setInstances(dynamicTrainingData);
+			m_NNSearch.setInstances(dynamicTrainingInstances);
 
 			
 		}
