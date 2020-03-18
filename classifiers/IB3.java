@@ -27,6 +27,8 @@ import java.util.Vector;
 import java.util.Arrays;
 import java.util.HashMap;
 
+import java.io.*;
+
 import weka.classifiers.AbstractClassifier;
 import weka.classifiers.UpdateableClassifier;
 import weka.classifiers.rules.ZeroR;
@@ -53,12 +55,19 @@ import weka.core.neighboursearch.NearestNeighbourSearch;
 public class IB3 extends AbstractClassifier {
 	protected int m_K = 1;
 	protected NearestNeighbourSearch m_NNSearch = new LinearNNSearch();
-	protected HashMap neighbourStats = new HashMap();
-	protected Instances dynamicTrainingInstances;
+	protected HashMap<Object, int[]> neighbourStats = new HashMap<Object, int[]>(); // Instance -> { complete classifications, total since added, total with same class }
+	protected Instances dynamicTrainingInstances; 
 
 	private void initCD(Instances train) throws Exception {
 		// Take the first element in the training data and add it to the dynamicTrainingInstances list
 		dynamicTrainingInstances = new Instances(train, 1, 1);
+
+		// Add the same instance to the statistics for CD
+		int[] arr = {0, 0, 0};
+		String key = dynamicTrainingInstances.firstInstance().toStringNoWeight().replaceAll(",", "|");
+		neighbourStats.put(key, arr); //dynamicTrainingInstances.firstInstance(), arr);
+
+		System.out.println("I've just added the first key, " + key + ", to the HashMap!");
 	}
 
 	private void addInstancetoCD(Instance x) throws Exception {
@@ -66,6 +75,12 @@ public class IB3 extends AbstractClassifier {
 		if (dynamicTrainingInstances != null) {
 			dynamicTrainingInstances.add(x);
 			m_NNSearch.setInstances(dynamicTrainingInstances);
+
+			// Statistics
+			int[] arr = {0, 0, 0};
+			String key = x.toStringNoWeight().replaceAll(",", "|");
+			neighbourStats.put(key, arr);
+			System.out.println("I've just added " + key + " to the HashMap!");
 		} else {
 			System.err.println("dynamicTrainingInstances is null!");
 		}
@@ -92,11 +107,31 @@ public class IB3 extends AbstractClassifier {
 
 		Instances neighbours = m_NNSearch.kNearestNeighbours(x, m_K);
 
+		double z, p;
+		int[] stats;
+
 		for (Instance neighbour : neighbours) {
 			// Remove the neighbour instances that do not meet the specifications:
 			//   Lower bound of acc is higher than the upper bound of the frequency of its class
+			//stats = neighbourStats.get(neighbour);
+			System.out.println(neighbourStats);
+			System.out.println(neighbour);
+			String key = neighbour.toStringNoWeight().replaceAll(",", "|");
+			stats = neighbourStats.get(key);
+			System.out.println(stats[0]);
+			System.out.println(stats[1]);
+			System.out.println(stats[2]);
 
-			
+
+			// Confidence for acceptance is 0.9
+			z = 0.9;
+			// Calculate lower bound of acc
+			//   Calculate p
+			//p = 
+
+			// Calculate upper bound of freq			
+
+			//System.out.println(stats);
 
 		}
 
