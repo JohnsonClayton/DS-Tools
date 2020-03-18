@@ -58,6 +58,10 @@ public class IB3 extends AbstractClassifier {
 	protected HashMap<Object, int[]> neighbourStats = new HashMap<Object, int[]>(); // Instance -> { complete classifications, total since added, total with same class }
 	protected Instances conceptDescription; 
 
+	private String getClassificationofInstance(Instance x) {
+		return x.classAttribute().value( (int) x.classValue() ).toString();
+	}
+
 	private String createKeyFromInstance(Instance x) {
 		return x.toStringNoWeight().replaceAll(",", "|");
 	}
@@ -78,6 +82,16 @@ public class IB3 extends AbstractClassifier {
 			stats[1] += 1;
 		}
 
+		// Number of classes in CD with the same class
+		int count = 0;
+		String my_class = getClassificationofInstance(x);
+		for (Instance instance : conceptDescription) {
+			if (getClassificationofInstance(instance) == my_class) {
+				count++;
+			}
+		}
+		stats[2] = count;
+
 		//System.out.println("Stats after: " + stats);
 
 		// Replace current value at this map location with new stats
@@ -95,7 +109,7 @@ public class IB3 extends AbstractClassifier {
 		conceptDescription = new Instances(train, 1, 1);
 
 		// Add the same instance to the statistics for CD
-		int[] arr = {1, 0};
+		int[] arr = {1, 0, 1};
 		String key = createKeyFromInstance(conceptDescription.firstInstance());
 		neighbourStats.put(key, arr); 
 
@@ -109,7 +123,7 @@ public class IB3 extends AbstractClassifier {
 			m_NNSearch.setInstances(conceptDescription);
 
 			// Statistics
-			int[] arr = {1, 0};
+			int[] arr = {1, 0, 1};
 			String key = createKeyFromInstance(x);
 			neighbourStats.put(key, arr);
 			//System.out.println("I've just added " + key + " to the HashMap!");
@@ -138,18 +152,19 @@ public class IB3 extends AbstractClassifier {
 	 *   z is the confidence (0.9 for acceptance and 0.7 for dropping) in both cases
 	 */
 
-	private boolean isAcceptable(int n, int p0) {
+	private boolean isAcceptable(int n, int p0, int same_class) {
 		double z = 0.9;
-		double p = p0/(1.0*n);
 		boolean acceptable = true;
 
 
 		// Calculate lower bound of acc
+		double p = p0/(1.0*n);
 		double lba = 0;
 		lba = (p + Math.pow(z, 2)/(2*n) - z*(Math.sqrt( (p*(1-p)/n) + Math.pow(z, 2)/(4*Math.pow(n, 2))))) / (1 + Math.pow(z, 2)/n) ; 
 
 		// Calculate upper bound of freq			
 		double ubf = 0;
+		p = (1.0*same_class) / (1.0*conceptDescription.numInstances());
 		ubf = (p + Math.pow(z, 2)/(2*n) + z*(Math.sqrt( (p*(1-p)/n) + Math.pow(z, 2)/(4*Math.pow(n, 2))))) / (1 + Math.pow(z, 2)/n) ; 
 		if (lba >= ubf) {
 			acceptable = false;
@@ -158,17 +173,18 @@ public class IB3 extends AbstractClassifier {
 		return acceptable;
 	}
 
-	private boolean isPoor(int n, int p0) {
+	private boolean isPoor(int n, int p0, int same_class) {
 		double z = 0.7;
-		double p = p0/(1.0*n);
 		boolean poor = false;
 
 		// Calculate upper bound of acc
+		double p = p0/(1.0*n);
 		double uba = 0;
 		uba = (p + Math.pow(z, 2)/(2*n) + z*(Math.sqrt( (p*(1-p)/n) + Math.pow(z, 2)/(4*Math.pow(n, 2))))) / (1 + Math.pow(z, 2)/n) ; 
 
 		// Calculate lower bound of freq			
 		double lbf = 0;
+		p = (1.0*same_class) / (1.0*conceptDescription.numInstances());
 		lbf = (p + Math.pow(z, 2)/(2*n) - z*(Math.sqrt( (p*(1-p)/n) + Math.pow(z, 2)/(4*Math.pow(n, 2))))) / (1 + Math.pow(z, 2)/n) ; 
 		if (uba < lbf) {
 			poor = true;
@@ -182,7 +198,7 @@ public class IB3 extends AbstractClassifier {
 		String key = createKeyFromInstance(x);
 		if (neighbourStats.containsKey(key)) {
 			int[] stats = neighbourStats.get(key);
-			if (isPoor(stats[0], stats[1])) {
+			if (isPoor(stats[0], stats[1], stats[2])) {
 				poor = true;
 			}
 		}
@@ -204,7 +220,7 @@ public class IB3 extends AbstractClassifier {
 				// Remove the neighbour instances that do not meet the specifications:
 				//   Lower bound of acc is higher than the upper bound of the frequency of its class
 				stats = neighbourStats.get(key);
-				if (!isAcceptable(stats[0], stats[1])) {
+				if (!isAcceptable(stats[0], stats[1], stats[2])) {
 					neighbours.remove(i);
 				}
 
@@ -228,7 +244,11 @@ public class IB3 extends AbstractClassifier {
 		for (Instance train_x : trainingData) {
 			// Only take the neighbours will acceptable statistics
 			Instances neighbours = getAcceptableNeighbours(train_x);
-			if (neighbours.numInstances() == 0) {
+			if (conceptDescription.numInstances() <= 0) {
+				m_NNSearch.setInstances(new Instances(trainingData, 1, 1));
+				initCD(trainingData);
+			}
+			else if (neighbours.numInstances() == 0) {
 				neighbours.add(randomInstance(conceptDescription));
 			}
 
@@ -260,26 +280,24 @@ public class IB3 extends AbstractClassifier {
 				addInstancetoCD(train_x);
 			}
 
-			// For every y in the CD
-			for (Instance y : conceptDescription) {
-				for (Instance neighbour : neighbours) {
-					// If y is in neighbours
-					//System.out.println("y: " + createKeyFromInstance(y)); 
-					//System.out.println("neighbour: " + createKeyFromInstance(neighbour)); 
+			// For every y in the CD that is as close if not closer
+			for (Instance neighbour : neighbours) {
+				updateStatistics(neighbour, pred, clss);
+			}
 
-					if ( createKeyFromInstance(y) != createKeyFromInstance(neighbour) ) {
-						//System.out.println("updating statistics...");
-						// Update y's statistics
-						updateStatistics(y, pred, clss);
+			// Go through the entire CD and remove all the instances with poor performance
+			boolean neighbr = false;
+			String key = "";
+			for (int i=0; i < conceptDescription.size(); i++) {
+				key = createKeyFromInstance(conceptDescription.get(i));
+				for (int j=0; j < neighbours.size(); j++) {
+					if (createKeyFromInstance(neighbours.get(j)) == key) {
+						neighbr = true;
 					}
 				}
-			}
-			// Go through the entire CD and remove all the instances with poor performance
-			for (int i=0; i < conceptDescription.size(); i++) {
 				// If y has performed poorly
-				if ( hasPoorPerformance( conceptDescription.get(i) ) ) {
+				if ( neighbr && hasPoorPerformance( conceptDescription.get(i) ) ) {
 					// Remove from CD
-					//System.out.println("removing...");
 					conceptDescription.remove(i);
 				}
 			}
