@@ -8,8 +8,9 @@ A few steps had to be taken in order to be able to add my custom Weka classifier
 After referencing the Weka documentation, there were a few options served: use Ant, Maven, or an IDE such as IntelliJ/Netbeans/Eclipse. I decided to try Netbeans, against my better judgement. After hours of only complete and total failure(s), I decided to try out the Ant method:  
 
 ```
-# wd: $HOME/weka-$RELEASE/weka/ for GitHub clone
-# wd: $HOME/weka-3-8-4-azul-zulu-linux/weka-$RELEASE/ for SourceForge download
+NOTE  
+wd: $HOME/weka-$RELEASE/weka/ for GitHub clone
+wd: $HOME/weka-3-8-4-azul-zulu-linux/weka-$RELEASE/ for SourceForge download
 $ ant -f build.xml exejar
 ```
 This finally worked and created the new `weka.jar` file in the newly-created `dist` directory. I copied this file over to my directory containing the `weka.sh` script and everything came up. 
@@ -23,7 +24,24 @@ Once all of this is finished, we can compile Weka just like before and re-run th
 
 *I am unsure why my former "SeriousTest" classifier is present, I must investigate this further.*
 
+### Running the Classifier (CLI)
+In order to run a given classifier from the Terminal (or CLI), the following steps may be required:
+```
+$WEKA_PATH is the path to your Weka installation, mine is ~/.../weka-3.8/weka/
+$ export CLASSPATH=$WEKA_PATH/weka.jar  
+
+This is just an example of what I'm doing. Yours may be in different subdirectories
+$ javac $WEKA_PATH/src/main/java/weka/classifiers/lazy/IB1.java 
+
+Running the classifier
+$ java weka.Run weka.classifiers.lazy.IB1.java -t ~/$DATA_PATH/breast-cancer.arff
+
+```
+
+You can always add the `-h` flag at the end of these commands to receive some help. Additional help may be found in the CLI Documentation link below.
 
 ## References
-1. Weka Documentation (https://waikato.github.io/weka-wiki/ant/)
+1. Weka Ant Documentation (https://waikato.github.io/weka-wiki/ant/)
 2. Weka Blog (https://waikato.github.io/weka-blog/posts/2018-10-08-making-a-weka-classifier/)
+3. CLI Documentation on SourceForge (https://prdownloads.sourceforge.net/weka/WekaManual-3-8-3.pdf?download)
+4. General Documentation (https://waikato.github.io/weka-wiki/documentation/)
