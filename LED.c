@@ -3,6 +3,8 @@
  7 attribute version
  Pretty lousy code!  Sorry.
  Programming language: C
+
+ Created by Dr. Sherine Antoun
  ====================================================================== */
 
 #include <stdio.h>
