@@ -58,9 +58,16 @@ public class IB3 extends AbstractClassifier {
 	protected HashMap<Object, int[]> neighbourStats = new HashMap<Object, int[]>(); // Instance -> { complete classifications, total since added, total with same class }
 	protected Instances conceptDescription; 
 
+	private String createKeyFromInstance(Instance x) {
+		return x.toStringNoWeight().replaceAll(",", "|");
+	}
+
 	// This will update the statistics of the given instance and classifications
 	private void updateStatistics(Instance x, String pred_class, String real_class) {
-		
+		// Need to acquire the HashMap object
+
+
+		// Add 1 to n ([0]) and maybe 1 to p_count ([1])
 	}
 
 	private Instance randomInstance(Instances x) {
@@ -75,8 +82,8 @@ public class IB3 extends AbstractClassifier {
 
 		// Add the same instance to the statistics for CD
 		int[] arr = {0, 0};
-		String key = conceptDescription.firstInstance().toStringNoWeight().replaceAll(",", "|");
-		neighbourStats.put(key, arr); //conceptDescription.firstInstance(), arr);
+		String key = createKeyFromInstance(conceptDescription.firstInstance());
+		neighbourStats.put(key, arr); 
 
 		//System.out.println("I've just added the first key, " + key + ", to the HashMap!");
 	}
@@ -89,7 +96,7 @@ public class IB3 extends AbstractClassifier {
 
 			// Statistics
 			int[] arr = {0, 0};
-			String key = x.toStringNoWeight().replaceAll(",", "|");
+			String key = createKeyFromInstance(x);
 			neighbourStats.put(key, arr);
 			//System.out.println("I've just added " + key + " to the HashMap!");
 		} else {
@@ -140,7 +147,7 @@ public class IB3 extends AbstractClassifier {
 
 	private boolean hasPoorPerformance(Instance x) {
 		boolean poor = false;
-		String key = x.toStringNoWeight().replaceAll(",", "|");
+		String key = createKeyFromInstance(x);
 		if (neighbourStats.containsKey(key)) {
 			int[] stats = neighbourStats.get(key);
 			if (isPoor(stats[0], stats[1])) {
@@ -160,7 +167,7 @@ public class IB3 extends AbstractClassifier {
 
 		for (int i = 0; i < neighbours.size(); i++) {
 			neighbour = neighbours.get(i);
-			String key = neighbour.toStringNoWeight().replaceAll(",", "|");
+			String key = createKeyFromInstance(neighbour);
 			if (neighbourStats.containsKey(key)) {
 				// Remove the neighbour instances that do not meet the specifications:
 				//   Lower bound of acc is higher than the upper bound of the frequency of its class
