@@ -65,9 +65,23 @@ public class IB3 extends AbstractClassifier {
 	// This will update the statistics of the given instance and classifications
 	private void updateStatistics(Instance x, String pred_class, String real_class) {
 		// Need to acquire the HashMap object
+		String key = createKeyFromInstance(x);
+		int[] stats = neighbourStats.get(key);
 
+		//System.out.println("Stats before: " + stats);
+		//System.out.println("Predicted: " + pred_class);
+		//System.out.println("Actual: " + real_class);
 
 		// Add 1 to n ([0]) and maybe 1 to p_count ([1])
+		stats[0] += 1;
+		if (pred_class == real_class) {
+			stats[1] += 1;
+		}
+
+		//System.out.println("Stats after: " + stats);
+
+		// Replace current value at this map location with new stats
+		neighbourStats.replace(key, stats);
 	}
 
 	private Instance randomInstance(Instances x) {
@@ -81,7 +95,7 @@ public class IB3 extends AbstractClassifier {
 		conceptDescription = new Instances(train, 1, 1);
 
 		// Add the same instance to the statistics for CD
-		int[] arr = {0, 0};
+		int[] arr = {1, 0};
 		String key = createKeyFromInstance(conceptDescription.firstInstance());
 		neighbourStats.put(key, arr); 
 
@@ -95,7 +109,7 @@ public class IB3 extends AbstractClassifier {
 			m_NNSearch.setInstances(conceptDescription);
 
 			// Statistics
-			int[] arr = {0, 0};
+			int[] arr = {1, 0};
 			String key = createKeyFromInstance(x);
 			neighbourStats.put(key, arr);
 			//System.out.println("I've just added " + key + " to the HashMap!");
@@ -124,25 +138,43 @@ public class IB3 extends AbstractClassifier {
 	 *   z is the confidence (0.9 for acceptance and 0.7 for dropping) in both cases
 	 */
 
-	private boolean isAcceptable(int n, int p) {
+	private boolean isAcceptable(int n, int p0) {
 		double z = 0.9;
+		double p = p0/(1.0*n);
+		boolean acceptable = true;
+
 
 		// Calculate lower bound of acc
+		double lba = 0;
+		lba = (p + Math.pow(z, 2)/(2*n) - z*(Math.sqrt( (p*(1-p)/n) + Math.pow(z, 2)/(4*Math.pow(n, 2))))) / (1 + Math.pow(z, 2)/n) ; 
 
 		// Calculate upper bound of freq			
-		
+		double ubf = 0;
+		ubf = (p + Math.pow(z, 2)/(2*n) + z*(Math.sqrt( (p*(1-p)/n) + Math.pow(z, 2)/(4*Math.pow(n, 2))))) / (1 + Math.pow(z, 2)/n) ; 
+		if (lba >= ubf) {
+			acceptable = false;
+		}
 			
-		return true;
+		return acceptable;
 	}
 
-	private boolean isPoor(int n, int p) {
+	private boolean isPoor(int n, int p0) {
 		double z = 0.7;
+		double p = p0/(1.0*n);
+		boolean poor = false;
 
 		// Calculate upper bound of acc
+		double uba = 0;
+		uba = (p + Math.pow(z, 2)/(2*n) + z*(Math.sqrt( (p*(1-p)/n) + Math.pow(z, 2)/(4*Math.pow(n, 2))))) / (1 + Math.pow(z, 2)/n) ; 
 
 		// Calculate lower bound of freq			
+		double lbf = 0;
+		lbf = (p + Math.pow(z, 2)/(2*n) - z*(Math.sqrt( (p*(1-p)/n) + Math.pow(z, 2)/(4*Math.pow(n, 2))))) / (1 + Math.pow(z, 2)/n) ; 
+		if (uba < lbf) {
+			poor = true;
+		}
 
-		return false;
+		return poor;
 	}
 
 	private boolean hasPoorPerformance(Instance x) {
@@ -232,21 +264,22 @@ public class IB3 extends AbstractClassifier {
 			for (Instance y : conceptDescription) {
 				for (Instance neighbour : neighbours) {
 					// If y is in neighbours
-					if ( y.toStringNoWeight() == neighbour.toStringNoWeight() ) {
+					//System.out.println("y: " + createKeyFromInstance(y)); 
+					//System.out.println("neighbour: " + createKeyFromInstance(neighbour)); 
+
+					if ( createKeyFromInstance(y) != createKeyFromInstance(neighbour) ) {
+						//System.out.println("updating statistics...");
 						// Update y's statistics
 						updateStatistics(y, pred, clss);
 					}
-
 				}
-
-
-				// If y's stats are bad enough, remove from CD
 			}
 			// Go through the entire CD and remove all the instances with poor performance
 			for (int i=0; i < conceptDescription.size(); i++) {
 				// If y has performed poorly
 				if ( hasPoorPerformance( conceptDescription.get(i) ) ) {
 					// Remove from CD
+					//System.out.println("removing...");
 					conceptDescription.remove(i);
 				}
 			}
