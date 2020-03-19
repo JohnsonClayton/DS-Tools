@@ -77,6 +77,15 @@ public class IB1 extends AbstractClassifier {
 
 	}
 
+	public String toString() {
+		int num = m_NNSearch.getInstances().numInstances();
+		if (num > 0) {
+			return "IB1 Classifier with " + num + " instances saved in the Concept Description";
+		} else {
+			return "IB1 Classifier";
+		}
+	}
+
 
 
 }

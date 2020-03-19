@@ -129,6 +129,14 @@ public class IB2 extends AbstractClassifier {
 
 	}
 
+	public String toString() {
+		int num = m_NNSearch.getInstances().numInstances();
+		if (num > 0) {
+			return "IB2 Classifier with " + num + " instances saved in the Concept Description";
+		} else {
+			return "IB2 Classifier";
+		}
+	}
 
 
 }

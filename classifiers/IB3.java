@@ -321,4 +321,14 @@ public class IB3 extends AbstractClassifier {
 		}
 		return dist;
 	}
+
+
+	public String toString() {
+		int num = m_NNSearch.getInstances().numInstances();
+		if (num > 0) {
+			return "IB3 Classifier with " + num + " instances saved in the Concept Description";
+		} else {
+			return "IB3 Classifier";
+		}
+	}
 }
