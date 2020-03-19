@@ -1,0 +1,2100 @@
+Running classifiers for 0% noise on seed of 1 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp0.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances        1000              100      %
+Correctly Classified Instances        1000              100      %
+IB2 Classifier with 10 instances saved in the Concept Description
+Correctly Classified Instances        1000              100      %
+Correctly Classified Instances        1000              100      %
+IB3 Classifier with 19 instances saved in the Concept Description
+Correctly Classified Instances        1000              100      %
+Correctly Classified Instances        1000              100      %
+Running classifiers for 0% noise on seed of 2 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp0.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances        1000              100      %
+Correctly Classified Instances        1000              100      %
+IB2 Classifier with 10 instances saved in the Concept Description
+Correctly Classified Instances        1000              100      %
+Correctly Classified Instances        1000              100      %
+IB3 Classifier with 19 instances saved in the Concept Description
+Correctly Classified Instances        1000              100      %
+Correctly Classified Instances        1000              100      %
+Running classifiers for 0% noise on seed of 3 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp0.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances        1000              100      %
+Correctly Classified Instances        1000              100      %
+IB2 Classifier with 10 instances saved in the Concept Description
+Correctly Classified Instances        1000              100      %
+Correctly Classified Instances        1000              100      %
+IB3 Classifier with 19 instances saved in the Concept Description
+Correctly Classified Instances        1000              100      %
+Correctly Classified Instances        1000              100      %
+Running classifiers for 0% noise on seed of 4 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp0.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances        1000              100      %
+Correctly Classified Instances        1000              100      %
+IB2 Classifier with 10 instances saved in the Concept Description
+Correctly Classified Instances        1000              100      %
+Correctly Classified Instances        1000              100      %
+IB3 Classifier with 19 instances saved in the Concept Description
+Correctly Classified Instances        1000              100      %
+Correctly Classified Instances        1000              100      %
+Running classifiers for 0% noise on seed of 5 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp0.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances        1000              100      %
+Correctly Classified Instances        1000              100      %
+IB2 Classifier with 10 instances saved in the Concept Description
+Correctly Classified Instances        1000              100      %
+Correctly Classified Instances        1000              100      %
+IB3 Classifier with 19 instances saved in the Concept Description
+Correctly Classified Instances        1000              100      %
+Correctly Classified Instances        1000              100      %
+Running classifiers for 0% noise on seed of 6 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp0.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances        1000              100      %
+Correctly Classified Instances        1000              100      %
+IB2 Classifier with 10 instances saved in the Concept Description
+Correctly Classified Instances        1000              100      %
+Correctly Classified Instances        1000              100      %
+IB3 Classifier with 19 instances saved in the Concept Description
+Correctly Classified Instances        1000              100      %
+Correctly Classified Instances        1000              100      %
+Running classifiers for 0% noise on seed of 7 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp0.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances        1000              100      %
+Correctly Classified Instances        1000              100      %
+IB2 Classifier with 10 instances saved in the Concept Description
+Correctly Classified Instances        1000              100      %
+Correctly Classified Instances        1000              100      %
+IB3 Classifier with 19 instances saved in the Concept Description
+Correctly Classified Instances        1000              100      %
+Correctly Classified Instances        1000              100      %
+Running classifiers for 0% noise on seed of 8 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp0.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances        1000              100      %
+Correctly Classified Instances        1000              100      %
+IB2 Classifier with 10 instances saved in the Concept Description
+Correctly Classified Instances        1000              100      %
+Correctly Classified Instances        1000              100      %
+IB3 Classifier with 19 instances saved in the Concept Description
+Correctly Classified Instances        1000              100      %
+Correctly Classified Instances        1000              100      %
+Running classifiers for 0% noise on seed of 9 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp0.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances        1000              100      %
+Correctly Classified Instances        1000              100      %
+IB2 Classifier with 10 instances saved in the Concept Description
+Correctly Classified Instances        1000              100      %
+Correctly Classified Instances        1000              100      %
+IB3 Classifier with 19 instances saved in the Concept Description
+Correctly Classified Instances        1000              100      %
+Correctly Classified Instances        1000              100      %
+Running classifiers for 0% noise on seed of 10 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp0.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances        1000              100      %
+Correctly Classified Instances        1000              100      %
+IB2 Classifier with 10 instances saved in the Concept Description
+Correctly Classified Instances        1000              100      %
+Correctly Classified Instances        1000              100      %
+IB3 Classifier with 19 instances saved in the Concept Description
+Correctly Classified Instances        1000              100      %
+Correctly Classified Instances        1000              100      %
+Running classifiers for 1% noise on seed of 1 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp1.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         977               97.7    %
+Correctly Classified Instances         970               97      %
+IB2 Classifier with 46 instances saved in the Concept Description
+Correctly Classified Instances         971               97.1    %
+Correctly Classified Instances         950               95      %
+IB3 Classifier with 66 instances saved in the Concept Description
+Correctly Classified Instances         976               97.6    %
+Correctly Classified Instances         972               97.2    %
+Running classifiers for 1% noise on seed of 2 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp1.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         977               97.7    %
+Correctly Classified Instances         971               97.1    %
+IB2 Classifier with 46 instances saved in the Concept Description
+Correctly Classified Instances         971               97.1    %
+Correctly Classified Instances         968               96.8    %
+IB3 Classifier with 66 instances saved in the Concept Description
+Correctly Classified Instances         976               97.6    %
+Correctly Classified Instances         971               97.1    %
+Running classifiers for 1% noise on seed of 3 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp1.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         977               97.7    %
+Correctly Classified Instances         969               96.9    %
+IB2 Classifier with 46 instances saved in the Concept Description
+Correctly Classified Instances         971               97.1    %
+Correctly Classified Instances         948               94.8    %
+IB3 Classifier with 66 instances saved in the Concept Description
+Correctly Classified Instances         976               97.6    %
+Correctly Classified Instances         970               97      %
+Running classifiers for 1% noise on seed of 4 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp1.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         977               97.7    %
+Correctly Classified Instances         968               96.8    %
+IB2 Classifier with 46 instances saved in the Concept Description
+Correctly Classified Instances         971               97.1    %
+Correctly Classified Instances         957               95.7    %
+IB3 Classifier with 66 instances saved in the Concept Description
+Correctly Classified Instances         976               97.6    %
+Correctly Classified Instances         971               97.1    %
+Running classifiers for 1% noise on seed of 5 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp1.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         977               97.7    %
+Correctly Classified Instances         970               97      %
+IB2 Classifier with 46 instances saved in the Concept Description
+Correctly Classified Instances         971               97.1    %
+Correctly Classified Instances         933               93.3    %
+IB3 Classifier with 66 instances saved in the Concept Description
+Correctly Classified Instances         976               97.6    %
+Correctly Classified Instances         972               97.2    %
+Running classifiers for 1% noise on seed of 6 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp1.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         977               97.7    %
+Correctly Classified Instances         969               96.9    %
+IB2 Classifier with 46 instances saved in the Concept Description
+Correctly Classified Instances         971               97.1    %
+Correctly Classified Instances         955               95.5    %
+IB3 Classifier with 66 instances saved in the Concept Description
+Correctly Classified Instances         976               97.6    %
+Correctly Classified Instances         970               97      %
+Running classifiers for 1% noise on seed of 7 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp1.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         977               97.7    %
+Correctly Classified Instances         971               97.1    %
+IB2 Classifier with 46 instances saved in the Concept Description
+Correctly Classified Instances         971               97.1    %
+Correctly Classified Instances         969               96.9    %
+IB3 Classifier with 66 instances saved in the Concept Description
+Correctly Classified Instances         976               97.6    %
+Correctly Classified Instances         972               97.2    %
+Running classifiers for 1% noise on seed of 8 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp1.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         977               97.7    %
+Correctly Classified Instances         969               96.9    %
+IB2 Classifier with 46 instances saved in the Concept Description
+Correctly Classified Instances         971               97.1    %
+Correctly Classified Instances         948               94.8    %
+IB3 Classifier with 66 instances saved in the Concept Description
+Correctly Classified Instances         976               97.6    %
+Correctly Classified Instances         969               96.9    %
+Running classifiers for 1% noise on seed of 9 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp1.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         977               97.7    %
+Correctly Classified Instances         970               97      %
+IB2 Classifier with 46 instances saved in the Concept Description
+Correctly Classified Instances         971               97.1    %
+Correctly Classified Instances         967               96.7    %
+IB3 Classifier with 66 instances saved in the Concept Description
+Correctly Classified Instances         976               97.6    %
+Correctly Classified Instances         971               97.1    %
+Running classifiers for 1% noise on seed of 10 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp1.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         977               97.7    %
+Correctly Classified Instances         970               97      %
+IB2 Classifier with 46 instances saved in the Concept Description
+Correctly Classified Instances         971               97.1    %
+Correctly Classified Instances         969               96.9    %
+IB3 Classifier with 66 instances saved in the Concept Description
+Correctly Classified Instances         976               97.6    %
+Correctly Classified Instances         973               97.3    %
+Running classifiers for 2% noise on seed of 1 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp2.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         959               95.9    %
+Correctly Classified Instances         946               94.6    %
+IB2 Classifier with 88 instances saved in the Concept Description
+Correctly Classified Instances         953               95.3    %
+Correctly Classified Instances         930               93      %
+IB3 Classifier with 112 instances saved in the Concept Description
+Correctly Classified Instances         957               95.7    %
+Correctly Classified Instances         951               95.1    %
+Running classifiers for 2% noise on seed of 2 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp2.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         959               95.9    %
+Correctly Classified Instances         946               94.6    %
+IB2 Classifier with 88 instances saved in the Concept Description
+Correctly Classified Instances         953               95.3    %
+Correctly Classified Instances         938               93.8    %
+IB3 Classifier with 112 instances saved in the Concept Description
+Correctly Classified Instances         957               95.7    %
+Correctly Classified Instances         946               94.6    %
+Running classifiers for 2% noise on seed of 3 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp2.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         959               95.9    %
+Correctly Classified Instances         946               94.6    %
+IB2 Classifier with 88 instances saved in the Concept Description
+Correctly Classified Instances         953               95.3    %
+Correctly Classified Instances         914               91.4    %
+IB3 Classifier with 112 instances saved in the Concept Description
+Correctly Classified Instances         957               95.7    %
+Correctly Classified Instances         944               94.4    %
+Running classifiers for 2% noise on seed of 4 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp2.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         959               95.9    %
+Correctly Classified Instances         946               94.6    %
+IB2 Classifier with 88 instances saved in the Concept Description
+Correctly Classified Instances         953               95.3    %
+Correctly Classified Instances         924               92.4    %
+IB3 Classifier with 112 instances saved in the Concept Description
+Correctly Classified Instances         957               95.7    %
+Correctly Classified Instances         947               94.7    %
+Running classifiers for 2% noise on seed of 5 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp2.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         959               95.9    %
+Correctly Classified Instances         946               94.6    %
+IB2 Classifier with 88 instances saved in the Concept Description
+Correctly Classified Instances         953               95.3    %
+Correctly Classified Instances         901               90.1    %
+IB3 Classifier with 112 instances saved in the Concept Description
+Correctly Classified Instances         957               95.7    %
+Correctly Classified Instances         946               94.6    %
+Running classifiers for 2% noise on seed of 6 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp2.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         959               95.9    %
+Correctly Classified Instances         946               94.6    %
+IB2 Classifier with 88 instances saved in the Concept Description
+Correctly Classified Instances         953               95.3    %
+Correctly Classified Instances         916               91.6    %
+IB3 Classifier with 112 instances saved in the Concept Description
+Correctly Classified Instances         957               95.7    %
+Correctly Classified Instances         945               94.5    %
+Running classifiers for 2% noise on seed of 7 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp2.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         959               95.9    %
+Correctly Classified Instances         946               94.6    %
+IB2 Classifier with 88 instances saved in the Concept Description
+Correctly Classified Instances         953               95.3    %
+Correctly Classified Instances         942               94.2    %
+IB3 Classifier with 112 instances saved in the Concept Description
+Correctly Classified Instances         957               95.7    %
+Correctly Classified Instances         946               94.6    %
+Running classifiers for 2% noise on seed of 8 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp2.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         959               95.9    %
+Correctly Classified Instances         945               94.5    %
+IB2 Classifier with 88 instances saved in the Concept Description
+Correctly Classified Instances         953               95.3    %
+Correctly Classified Instances         901               90.1    %
+IB3 Classifier with 112 instances saved in the Concept Description
+Correctly Classified Instances         957               95.7    %
+Correctly Classified Instances         947               94.7    %
+Running classifiers for 2% noise on seed of 9 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp2.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         959               95.9    %
+Correctly Classified Instances         947               94.7    %
+IB2 Classifier with 88 instances saved in the Concept Description
+Correctly Classified Instances         953               95.3    %
+Correctly Classified Instances         923               92.3    %
+IB3 Classifier with 112 instances saved in the Concept Description
+Correctly Classified Instances         957               95.7    %
+Correctly Classified Instances         943               94.3    %
+Running classifiers for 2% noise on seed of 10 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp2.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         959               95.9    %
+Correctly Classified Instances         943               94.3    %
+IB2 Classifier with 88 instances saved in the Concept Description
+Correctly Classified Instances         953               95.3    %
+Correctly Classified Instances         918               91.8    %
+IB3 Classifier with 112 instances saved in the Concept Description
+Correctly Classified Instances         957               95.7    %
+Correctly Classified Instances         944               94.4    %
+Running classifiers for 3% noise on seed of 1 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp3.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         931               93.1    %
+Correctly Classified Instances         909               90.9    %
+IB2 Classifier with 140 instances saved in the Concept Description
+Correctly Classified Instances         922               92.2    %
+Correctly Classified Instances         860               86      %
+IB3 Classifier with 169 instances saved in the Concept Description
+Correctly Classified Instances         927               92.7    %
+Correctly Classified Instances         912               91.2    %
+Running classifiers for 3% noise on seed of 2 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp3.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         931               93.1    %
+Correctly Classified Instances         910               91      %
+IB2 Classifier with 140 instances saved in the Concept Description
+Correctly Classified Instances         922               92.2    %
+Correctly Classified Instances         894               89.4    %
+IB3 Classifier with 169 instances saved in the Concept Description
+Correctly Classified Instances         927               92.7    %
+Correctly Classified Instances         905               90.5    %
+Running classifiers for 3% noise on seed of 3 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp3.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         931               93.1    %
+Correctly Classified Instances         914               91.4    %
+IB2 Classifier with 140 instances saved in the Concept Description
+Correctly Classified Instances         922               92.2    %
+Correctly Classified Instances         875               87.5    %
+IB3 Classifier with 169 instances saved in the Concept Description
+Correctly Classified Instances         927               92.7    %
+Correctly Classified Instances         911               91.1    %
+Running classifiers for 3% noise on seed of 4 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp3.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         931               93.1    %
+Correctly Classified Instances         910               91      %
+IB2 Classifier with 140 instances saved in the Concept Description
+Correctly Classified Instances         922               92.2    %
+Correctly Classified Instances         878               87.8    %
+IB3 Classifier with 169 instances saved in the Concept Description
+Correctly Classified Instances         927               92.7    %
+Correctly Classified Instances         910               91      %
+Running classifiers for 3% noise on seed of 5 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp3.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         931               93.1    %
+Correctly Classified Instances         913               91.3    %
+IB2 Classifier with 140 instances saved in the Concept Description
+Correctly Classified Instances         922               92.2    %
+Correctly Classified Instances         862               86.2    %
+IB3 Classifier with 169 instances saved in the Concept Description
+Correctly Classified Instances         927               92.7    %
+Correctly Classified Instances         899               89.9    %
+Running classifiers for 3% noise on seed of 6 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp3.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         931               93.1    %
+Correctly Classified Instances         912               91.2    %
+IB2 Classifier with 140 instances saved in the Concept Description
+Correctly Classified Instances         922               92.2    %
+Correctly Classified Instances         856               85.6    %
+IB3 Classifier with 169 instances saved in the Concept Description
+Correctly Classified Instances         927               92.7    %
+Correctly Classified Instances         913               91.3    %
+Running classifiers for 3% noise on seed of 7 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp3.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         931               93.1    %
+Correctly Classified Instances         914               91.4    %
+IB2 Classifier with 140 instances saved in the Concept Description
+Correctly Classified Instances         922               92.2    %
+Correctly Classified Instances         897               89.7    %
+IB3 Classifier with 169 instances saved in the Concept Description
+Correctly Classified Instances         927               92.7    %
+Correctly Classified Instances         916               91.6    %
+Running classifiers for 3% noise on seed of 8 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp3.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         931               93.1    %
+Correctly Classified Instances         912               91.2    %
+IB2 Classifier with 140 instances saved in the Concept Description
+Correctly Classified Instances         922               92.2    %
+Correctly Classified Instances         870               87      %
+IB3 Classifier with 169 instances saved in the Concept Description
+Correctly Classified Instances         927               92.7    %
+Correctly Classified Instances         907               90.7    %
+Running classifiers for 3% noise on seed of 9 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp3.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         931               93.1    %
+Correctly Classified Instances         914               91.4    %
+IB2 Classifier with 140 instances saved in the Concept Description
+Correctly Classified Instances         922               92.2    %
+Correctly Classified Instances         864               86.4    %
+IB3 Classifier with 169 instances saved in the Concept Description
+Correctly Classified Instances         927               92.7    %
+Correctly Classified Instances         913               91.3    %
+Running classifiers for 3% noise on seed of 10 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp3.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         931               93.1    %
+Correctly Classified Instances         913               91.3    %
+IB2 Classifier with 140 instances saved in the Concept Description
+Correctly Classified Instances         922               92.2    %
+Correctly Classified Instances         867               86.7    %
+IB3 Classifier with 169 instances saved in the Concept Description
+Correctly Classified Instances         927               92.7    %
+Correctly Classified Instances         913               91.3    %
+Running classifiers for 4% noise on seed of 1 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp4.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         906               90.6    %
+Correctly Classified Instances         879               87.9    %
+IB2 Classifier with 178 instances saved in the Concept Description
+Correctly Classified Instances         900               90      %
+Correctly Classified Instances         838               83.8    %
+IB3 Classifier with 199 instances saved in the Concept Description
+Correctly Classified Instances         900               90      %
+Correctly Classified Instances         868               86.8    %
+Running classifiers for 4% noise on seed of 2 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp4.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         906               90.6    %
+Correctly Classified Instances         882               88.2    %
+IB2 Classifier with 178 instances saved in the Concept Description
+Correctly Classified Instances         900               90      %
+Correctly Classified Instances         856               85.6    %
+IB3 Classifier with 199 instances saved in the Concept Description
+Correctly Classified Instances         900               90      %
+Correctly Classified Instances         881               88.1    %
+Running classifiers for 4% noise on seed of 3 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp4.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         906               90.6    %
+Correctly Classified Instances         880               88      %
+IB2 Classifier with 178 instances saved in the Concept Description
+Correctly Classified Instances         900               90      %
+Correctly Classified Instances         828               82.8    %
+IB3 Classifier with 199 instances saved in the Concept Description
+Correctly Classified Instances         900               90      %
+Correctly Classified Instances         874               87.4    %
+Running classifiers for 4% noise on seed of 4 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp4.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         906               90.6    %
+Correctly Classified Instances         883               88.3    %
+IB2 Classifier with 178 instances saved in the Concept Description
+Correctly Classified Instances         900               90      %
+Correctly Classified Instances         849               84.9    %
+IB3 Classifier with 199 instances saved in the Concept Description
+Correctly Classified Instances         900               90      %
+Correctly Classified Instances         874               87.4    %
+Running classifiers for 4% noise on seed of 5 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp4.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         906               90.6    %
+Correctly Classified Instances         882               88.2    %
+IB2 Classifier with 178 instances saved in the Concept Description
+Correctly Classified Instances         900               90      %
+Correctly Classified Instances         833               83.3    %
+IB3 Classifier with 199 instances saved in the Concept Description
+Correctly Classified Instances         900               90      %
+Correctly Classified Instances         878               87.8    %
+Running classifiers for 4% noise on seed of 6 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp4.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         906               90.6    %
+Correctly Classified Instances         885               88.5    %
+IB2 Classifier with 178 instances saved in the Concept Description
+Correctly Classified Instances         900               90      %
+Correctly Classified Instances         841               84.1    %
+IB3 Classifier with 199 instances saved in the Concept Description
+Correctly Classified Instances         900               90      %
+Correctly Classified Instances         877               87.7    %
+Running classifiers for 4% noise on seed of 7 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp4.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         906               90.6    %
+Correctly Classified Instances         886               88.6    %
+IB2 Classifier with 178 instances saved in the Concept Description
+Correctly Classified Instances         900               90      %
+Correctly Classified Instances         838               83.8    %
+IB3 Classifier with 199 instances saved in the Concept Description
+Correctly Classified Instances         900               90      %
+Correctly Classified Instances         877               87.7    %
+Running classifiers for 4% noise on seed of 8 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp4.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         906               90.6    %
+Correctly Classified Instances         884               88.4    %
+IB2 Classifier with 178 instances saved in the Concept Description
+Correctly Classified Instances         900               90      %
+Correctly Classified Instances         836               83.6    %
+IB3 Classifier with 199 instances saved in the Concept Description
+Correctly Classified Instances         900               90      %
+Correctly Classified Instances         873               87.3    %
+Running classifiers for 4% noise on seed of 9 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp4.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         906               90.6    %
+Correctly Classified Instances         883               88.3    %
+IB2 Classifier with 178 instances saved in the Concept Description
+Correctly Classified Instances         900               90      %
+Correctly Classified Instances         832               83.2    %
+IB3 Classifier with 199 instances saved in the Concept Description
+Correctly Classified Instances         900               90      %
+Correctly Classified Instances         872               87.2    %
+Running classifiers for 4% noise on seed of 10 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp4.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         906               90.6    %
+Correctly Classified Instances         884               88.4    %
+IB2 Classifier with 178 instances saved in the Concept Description
+Correctly Classified Instances         900               90      %
+Correctly Classified Instances         834               83.4    %
+IB3 Classifier with 199 instances saved in the Concept Description
+Correctly Classified Instances         900               90      %
+Correctly Classified Instances         880               88      %
+Running classifiers for 5% noise on seed of 1 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp5.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         882               88.2    %
+Correctly Classified Instances         856               85.6    %
+IB2 Classifier with 224 instances saved in the Concept Description
+Correctly Classified Instances         873               87.3    %
+Correctly Classified Instances         781               78.1    %
+IB3 Classifier with 247 instances saved in the Concept Description
+Correctly Classified Instances         870               87      %
+Correctly Classified Instances         850               85      %
+Running classifiers for 5% noise on seed of 2 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp5.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         882               88.2    %
+Correctly Classified Instances         862               86.2    %
+IB2 Classifier with 224 instances saved in the Concept Description
+Correctly Classified Instances         873               87.3    %
+Correctly Classified Instances         830               83      %
+IB3 Classifier with 247 instances saved in the Concept Description
+Correctly Classified Instances         870               87      %
+Correctly Classified Instances         849               84.9    %
+Running classifiers for 5% noise on seed of 3 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp5.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         882               88.2    %
+Correctly Classified Instances         854               85.4    %
+IB2 Classifier with 224 instances saved in the Concept Description
+Correctly Classified Instances         873               87.3    %
+Correctly Classified Instances         798               79.8    %
+IB3 Classifier with 247 instances saved in the Concept Description
+Correctly Classified Instances         870               87      %
+Correctly Classified Instances         842               84.2    %
+Running classifiers for 5% noise on seed of 4 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp5.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         882               88.2    %
+Correctly Classified Instances         853               85.3    %
+IB2 Classifier with 224 instances saved in the Concept Description
+Correctly Classified Instances         873               87.3    %
+Correctly Classified Instances         816               81.6    %
+IB3 Classifier with 247 instances saved in the Concept Description
+Correctly Classified Instances         870               87      %
+Correctly Classified Instances         852               85.2    %
+Running classifiers for 5% noise on seed of 5 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp5.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         882               88.2    %
+Correctly Classified Instances         857               85.7    %
+IB2 Classifier with 224 instances saved in the Concept Description
+Correctly Classified Instances         873               87.3    %
+Correctly Classified Instances         803               80.3    %
+IB3 Classifier with 247 instances saved in the Concept Description
+Correctly Classified Instances         870               87      %
+Correctly Classified Instances         839               83.9    %
+Running classifiers for 5% noise on seed of 6 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp5.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         882               88.2    %
+Correctly Classified Instances         859               85.9    %
+IB2 Classifier with 224 instances saved in the Concept Description
+Correctly Classified Instances         873               87.3    %
+Correctly Classified Instances         798               79.8    %
+IB3 Classifier with 247 instances saved in the Concept Description
+Correctly Classified Instances         870               87      %
+Correctly Classified Instances         847               84.7    %
+Running classifiers for 5% noise on seed of 7 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp5.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         882               88.2    %
+Correctly Classified Instances         859               85.9    %
+IB2 Classifier with 224 instances saved in the Concept Description
+Correctly Classified Instances         873               87.3    %
+Correctly Classified Instances         801               80.1    %
+IB3 Classifier with 247 instances saved in the Concept Description
+Correctly Classified Instances         870               87      %
+Correctly Classified Instances         846               84.6    %
+Running classifiers for 5% noise on seed of 8 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp5.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         882               88.2    %
+Correctly Classified Instances         860               86      %
+IB2 Classifier with 224 instances saved in the Concept Description
+Correctly Classified Instances         873               87.3    %
+Correctly Classified Instances         814               81.4    %
+IB3 Classifier with 247 instances saved in the Concept Description
+Correctly Classified Instances         870               87      %
+Correctly Classified Instances         849               84.9    %
+Running classifiers for 5% noise on seed of 9 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp5.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         882               88.2    %
+Correctly Classified Instances         853               85.3    %
+IB2 Classifier with 224 instances saved in the Concept Description
+Correctly Classified Instances         873               87.3    %
+Correctly Classified Instances         800               80      %
+IB3 Classifier with 247 instances saved in the Concept Description
+Correctly Classified Instances         870               87      %
+Correctly Classified Instances         847               84.7    %
+Running classifiers for 5% noise on seed of 10 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp5.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         882               88.2    %
+Correctly Classified Instances         856               85.6    %
+IB2 Classifier with 224 instances saved in the Concept Description
+Correctly Classified Instances         873               87.3    %
+Correctly Classified Instances         803               80.3    %
+IB3 Classifier with 247 instances saved in the Concept Description
+Correctly Classified Instances         870               87      %
+Correctly Classified Instances         853               85.3    %
+Running classifiers for 6% noise on seed of 1 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp6.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         851               85.1    %
+Correctly Classified Instances         818               81.8    %
+IB2 Classifier with 265 instances saved in the Concept Description
+Correctly Classified Instances         770               77      %
+Correctly Classified Instances         738               73.8    %
+IB3 Classifier with 300 instances saved in the Concept Description
+Correctly Classified Instances         846               84.6    %
+Correctly Classified Instances         808               80.8    %
+Running classifiers for 6% noise on seed of 2 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp6.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         851               85.1    %
+Correctly Classified Instances         818               81.8    %
+IB2 Classifier with 265 instances saved in the Concept Description
+Correctly Classified Instances         770               77      %
+Correctly Classified Instances         791               79.1    %
+IB3 Classifier with 300 instances saved in the Concept Description
+Correctly Classified Instances         846               84.6    %
+Correctly Classified Instances         811               81.1    %
+Running classifiers for 6% noise on seed of 3 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp6.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         851               85.1    %
+Correctly Classified Instances         815               81.5    %
+IB2 Classifier with 265 instances saved in the Concept Description
+Correctly Classified Instances         770               77      %
+Correctly Classified Instances         746               74.6    %
+IB3 Classifier with 300 instances saved in the Concept Description
+Correctly Classified Instances         846               84.6    %
+Correctly Classified Instances         811               81.1    %
+Running classifiers for 6% noise on seed of 4 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp6.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         851               85.1    %
+Correctly Classified Instances         819               81.9    %
+IB2 Classifier with 265 instances saved in the Concept Description
+Correctly Classified Instances         770               77      %
+Correctly Classified Instances         778               77.8    %
+IB3 Classifier with 300 instances saved in the Concept Description
+Correctly Classified Instances         846               84.6    %
+Correctly Classified Instances         815               81.5    %
+Running classifiers for 6% noise on seed of 5 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp6.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         851               85.1    %
+Correctly Classified Instances         818               81.8    %
+IB2 Classifier with 265 instances saved in the Concept Description
+Correctly Classified Instances         770               77      %
+Correctly Classified Instances         755               75.5    %
+IB3 Classifier with 300 instances saved in the Concept Description
+Correctly Classified Instances         846               84.6    %
+Correctly Classified Instances         801               80.1    %
+Running classifiers for 6% noise on seed of 6 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp6.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         851               85.1    %
+Correctly Classified Instances         817               81.7    %
+IB2 Classifier with 265 instances saved in the Concept Description
+Correctly Classified Instances         770               77      %
+Correctly Classified Instances         759               75.9    %
+IB3 Classifier with 300 instances saved in the Concept Description
+Correctly Classified Instances         846               84.6    %
+Correctly Classified Instances         798               79.8    %
+Running classifiers for 6% noise on seed of 7 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp6.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         851               85.1    %
+Correctly Classified Instances         822               82.2    %
+IB2 Classifier with 265 instances saved in the Concept Description
+Correctly Classified Instances         770               77      %
+Correctly Classified Instances         774               77.4    %
+IB3 Classifier with 300 instances saved in the Concept Description
+Correctly Classified Instances         846               84.6    %
+Correctly Classified Instances         824               82.4    %
+Running classifiers for 6% noise on seed of 8 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp6.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         851               85.1    %
+Correctly Classified Instances         826               82.6    %
+IB2 Classifier with 265 instances saved in the Concept Description
+Correctly Classified Instances         770               77      %
+Correctly Classified Instances         764               76.4    %
+IB3 Classifier with 300 instances saved in the Concept Description
+Correctly Classified Instances         846               84.6    %
+Correctly Classified Instances         807               80.7    %
+Running classifiers for 6% noise on seed of 9 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp6.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         851               85.1    %
+Correctly Classified Instances         816               81.6    %
+IB2 Classifier with 265 instances saved in the Concept Description
+Correctly Classified Instances         770               77      %
+Correctly Classified Instances         763               76.3    %
+IB3 Classifier with 300 instances saved in the Concept Description
+Correctly Classified Instances         846               84.6    %
+Correctly Classified Instances         805               80.5    %
+Running classifiers for 6% noise on seed of 10 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp6.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         851               85.1    %
+Correctly Classified Instances         816               81.6    %
+IB2 Classifier with 265 instances saved in the Concept Description
+Correctly Classified Instances         770               77      %
+Correctly Classified Instances         761               76.1    %
+IB3 Classifier with 300 instances saved in the Concept Description
+Correctly Classified Instances         846               84.6    %
+Correctly Classified Instances         813               81.3    %
+Running classifiers for 7% noise on seed of 1 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp7.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         831               83.1    %
+Correctly Classified Instances         792               79.2    %
+IB2 Classifier with 288 instances saved in the Concept Description
+Correctly Classified Instances         758               75.8    %
+Correctly Classified Instances         716               71.6    %
+IB3 Classifier with 319 instances saved in the Concept Description
+Correctly Classified Instances         827               82.7    %
+Correctly Classified Instances         789               78.9    %
+Running classifiers for 7% noise on seed of 2 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp7.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         831               83.1    %
+Correctly Classified Instances         792               79.2    %
+IB2 Classifier with 288 instances saved in the Concept Description
+Correctly Classified Instances         758               75.8    %
+Correctly Classified Instances         753               75.3    %
+IB3 Classifier with 319 instances saved in the Concept Description
+Correctly Classified Instances         827               82.7    %
+Correctly Classified Instances         790               79      %
+Running classifiers for 7% noise on seed of 3 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp7.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         831               83.1    %
+Correctly Classified Instances         789               78.9    %
+IB2 Classifier with 288 instances saved in the Concept Description
+Correctly Classified Instances         758               75.8    %
+Correctly Classified Instances         730               73      %
+IB3 Classifier with 319 instances saved in the Concept Description
+Correctly Classified Instances         827               82.7    %
+Correctly Classified Instances         788               78.8    %
+Running classifiers for 7% noise on seed of 4 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp7.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         831               83.1    %
+Correctly Classified Instances         792               79.2    %
+IB2 Classifier with 288 instances saved in the Concept Description
+Correctly Classified Instances         758               75.8    %
+Correctly Classified Instances         727               72.7    %
+IB3 Classifier with 319 instances saved in the Concept Description
+Correctly Classified Instances         827               82.7    %
+Correctly Classified Instances         770               77      %
+Running classifiers for 7% noise on seed of 5 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp7.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         831               83.1    %
+Correctly Classified Instances         788               78.8    %
+IB2 Classifier with 288 instances saved in the Concept Description
+Correctly Classified Instances         758               75.8    %
+Correctly Classified Instances         733               73.3    %
+IB3 Classifier with 319 instances saved in the Concept Description
+Correctly Classified Instances         827               82.7    %
+Correctly Classified Instances         781               78.1    %
+Running classifiers for 7% noise on seed of 6 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp7.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         831               83.1    %
+Correctly Classified Instances         788               78.8    %
+IB2 Classifier with 288 instances saved in the Concept Description
+Correctly Classified Instances         758               75.8    %
+Correctly Classified Instances         741               74.1    %
+IB3 Classifier with 319 instances saved in the Concept Description
+Correctly Classified Instances         827               82.7    %
+Correctly Classified Instances         787               78.7    %
+Running classifiers for 7% noise on seed of 7 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp7.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         831               83.1    %
+Correctly Classified Instances         791               79.1    %
+IB2 Classifier with 288 instances saved in the Concept Description
+Correctly Classified Instances         758               75.8    %
+Correctly Classified Instances         730               73      %
+IB3 Classifier with 319 instances saved in the Concept Description
+Correctly Classified Instances         827               82.7    %
+Correctly Classified Instances         796               79.6    %
+Running classifiers for 7% noise on seed of 8 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp7.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         831               83.1    %
+Correctly Classified Instances         798               79.8    %
+IB2 Classifier with 288 instances saved in the Concept Description
+Correctly Classified Instances         758               75.8    %
+Correctly Classified Instances         721               72.1    %
+IB3 Classifier with 319 instances saved in the Concept Description
+Correctly Classified Instances         827               82.7    %
+Correctly Classified Instances         777               77.7    %
+Running classifiers for 7% noise on seed of 9 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp7.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         831               83.1    %
+Correctly Classified Instances         789               78.9    %
+IB2 Classifier with 288 instances saved in the Concept Description
+Correctly Classified Instances         758               75.8    %
+Correctly Classified Instances         748               74.8    %
+IB3 Classifier with 319 instances saved in the Concept Description
+Correctly Classified Instances         827               82.7    %
+Correctly Classified Instances         789               78.9    %
+Running classifiers for 7% noise on seed of 10 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp7.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         831               83.1    %
+Correctly Classified Instances         787               78.7    %
+IB2 Classifier with 288 instances saved in the Concept Description
+Correctly Classified Instances         758               75.8    %
+Correctly Classified Instances         751               75.1    %
+IB3 Classifier with 319 instances saved in the Concept Description
+Correctly Classified Instances         827               82.7    %
+Correctly Classified Instances         787               78.7    %
+Running classifiers for 8% noise on seed of 1 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp8.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         813               81.3    %
+Correctly Classified Instances         763               76.3    %
+IB2 Classifier with 314 instances saved in the Concept Description
+Correctly Classified Instances         740               74      %
+Correctly Classified Instances         679               67.9    %
+IB3 Classifier with 358 instances saved in the Concept Description
+Correctly Classified Instances         796               79.6    %
+Correctly Classified Instances         758               75.8    %
+Running classifiers for 8% noise on seed of 2 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp8.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         813               81.3    %
+Correctly Classified Instances         765               76.5    %
+IB2 Classifier with 314 instances saved in the Concept Description
+Correctly Classified Instances         740               74      %
+Correctly Classified Instances         728               72.8    %
+IB3 Classifier with 358 instances saved in the Concept Description
+Correctly Classified Instances         796               79.6    %
+Correctly Classified Instances         761               76.1    %
+Running classifiers for 8% noise on seed of 3 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp8.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         813               81.3    %
+Correctly Classified Instances         766               76.6    %
+IB2 Classifier with 314 instances saved in the Concept Description
+Correctly Classified Instances         740               74      %
+Correctly Classified Instances         707               70.7    %
+IB3 Classifier with 358 instances saved in the Concept Description
+Correctly Classified Instances         796               79.6    %
+Correctly Classified Instances         750               75      %
+Running classifiers for 8% noise on seed of 4 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp8.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         813               81.3    %
+Correctly Classified Instances         766               76.6    %
+IB2 Classifier with 314 instances saved in the Concept Description
+Correctly Classified Instances         740               74      %
+Correctly Classified Instances         718               71.8    %
+IB3 Classifier with 358 instances saved in the Concept Description
+Correctly Classified Instances         796               79.6    %
+Correctly Classified Instances         761               76.1    %
+Running classifiers for 8% noise on seed of 5 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp8.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         813               81.3    %
+Correctly Classified Instances         759               75.9    %
+IB2 Classifier with 314 instances saved in the Concept Description
+Correctly Classified Instances         740               74      %
+Correctly Classified Instances         695               69.5    %
+IB3 Classifier with 358 instances saved in the Concept Description
+Correctly Classified Instances         796               79.6    %
+Correctly Classified Instances         752               75.2    %
+Running classifiers for 8% noise on seed of 6 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp8.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         813               81.3    %
+Correctly Classified Instances         768               76.8    %
+IB2 Classifier with 314 instances saved in the Concept Description
+Correctly Classified Instances         740               74      %
+Correctly Classified Instances         716               71.6    %
+IB3 Classifier with 358 instances saved in the Concept Description
+Correctly Classified Instances         796               79.6    %
+Correctly Classified Instances         763               76.3    %
+Running classifiers for 8% noise on seed of 7 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp8.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         813               81.3    %
+Correctly Classified Instances         764               76.4    %
+IB2 Classifier with 314 instances saved in the Concept Description
+Correctly Classified Instances         740               74      %
+Correctly Classified Instances         720               72      %
+IB3 Classifier with 358 instances saved in the Concept Description
+Correctly Classified Instances         796               79.6    %
+Correctly Classified Instances         756               75.6    %
+Running classifiers for 8% noise on seed of 8 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp8.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         813               81.3    %
+Correctly Classified Instances         769               76.9    %
+IB2 Classifier with 314 instances saved in the Concept Description
+Correctly Classified Instances         740               74      %
+Correctly Classified Instances         705               70.5    %
+IB3 Classifier with 358 instances saved in the Concept Description
+Correctly Classified Instances         796               79.6    %
+Correctly Classified Instances         761               76.1    %
+Running classifiers for 8% noise on seed of 9 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp8.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         813               81.3    %
+Correctly Classified Instances         762               76.2    %
+IB2 Classifier with 314 instances saved in the Concept Description
+Correctly Classified Instances         740               74      %
+Correctly Classified Instances         719               71.9    %
+IB3 Classifier with 358 instances saved in the Concept Description
+Correctly Classified Instances         796               79.6    %
+Correctly Classified Instances         759               75.9    %
+Running classifiers for 8% noise on seed of 10 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp8.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         813               81.3    %
+Correctly Classified Instances         763               76.3    %
+IB2 Classifier with 314 instances saved in the Concept Description
+Correctly Classified Instances         740               74      %
+Correctly Classified Instances         732               73.2    %
+IB3 Classifier with 358 instances saved in the Concept Description
+Correctly Classified Instances         796               79.6    %
+Correctly Classified Instances         766               76.6    %
+Running classifiers for 9% noise on seed of 1 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp9.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         793               79.3    %
+Correctly Classified Instances         753               75.3    %
+IB2 Classifier with 338 instances saved in the Concept Description
+Correctly Classified Instances         670               67      %
+Correctly Classified Instances         683               68.3    %
+IB3 Classifier with 377 instances saved in the Concept Description
+Correctly Classified Instances         783               78.3    %
+Correctly Classified Instances         724               72.4    %
+Running classifiers for 9% noise on seed of 2 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp9.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         793               79.3    %
+Correctly Classified Instances         750               75      %
+IB2 Classifier with 338 instances saved in the Concept Description
+Correctly Classified Instances         670               67      %
+Correctly Classified Instances         703               70.3    %
+IB3 Classifier with 377 instances saved in the Concept Description
+Correctly Classified Instances         783               78.3    %
+Correctly Classified Instances         740               74      %
+Running classifiers for 9% noise on seed of 3 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp9.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         793               79.3    %
+Correctly Classified Instances         748               74.8    %
+IB2 Classifier with 338 instances saved in the Concept Description
+Correctly Classified Instances         670               67      %
+Correctly Classified Instances         690               69      %
+IB3 Classifier with 377 instances saved in the Concept Description
+Correctly Classified Instances         783               78.3    %
+Correctly Classified Instances         726               72.6    %
+Running classifiers for 9% noise on seed of 4 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp9.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         793               79.3    %
+Correctly Classified Instances         756               75.6    %
+IB2 Classifier with 338 instances saved in the Concept Description
+Correctly Classified Instances         670               67      %
+Correctly Classified Instances         684               68.4    %
+IB3 Classifier with 377 instances saved in the Concept Description
+Correctly Classified Instances         783               78.3    %
+Correctly Classified Instances         723               72.3    %
+Running classifiers for 9% noise on seed of 5 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp9.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         793               79.3    %
+Correctly Classified Instances         743               74.3    %
+IB2 Classifier with 338 instances saved in the Concept Description
+Correctly Classified Instances         670               67      %
+Correctly Classified Instances         681               68.1    %
+IB3 Classifier with 377 instances saved in the Concept Description
+Correctly Classified Instances         783               78.3    %
+Correctly Classified Instances         714               71.4    %
+Running classifiers for 9% noise on seed of 6 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp9.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         793               79.3    %
+Correctly Classified Instances         751               75.1    %
+IB2 Classifier with 338 instances saved in the Concept Description
+Correctly Classified Instances         670               67      %
+Correctly Classified Instances         697               69.7    %
+IB3 Classifier with 377 instances saved in the Concept Description
+Correctly Classified Instances         783               78.3    %
+Correctly Classified Instances         737               73.7    %
+Running classifiers for 9% noise on seed of 7 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp9.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         793               79.3    %
+Correctly Classified Instances         748               74.8    %
+IB2 Classifier with 338 instances saved in the Concept Description
+Correctly Classified Instances         670               67      %
+Correctly Classified Instances         697               69.7    %
+IB3 Classifier with 377 instances saved in the Concept Description
+Correctly Classified Instances         783               78.3    %
+Correctly Classified Instances         715               71.5    %
+Running classifiers for 9% noise on seed of 8 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp9.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         793               79.3    %
+Correctly Classified Instances         755               75.5    %
+IB2 Classifier with 338 instances saved in the Concept Description
+Correctly Classified Instances         670               67      %
+Correctly Classified Instances         675               67.5    %
+IB3 Classifier with 377 instances saved in the Concept Description
+Correctly Classified Instances         783               78.3    %
+Correctly Classified Instances         734               73.4    %
+Running classifiers for 9% noise on seed of 9 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp9.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         793               79.3    %
+Correctly Classified Instances         747               74.7    %
+IB2 Classifier with 338 instances saved in the Concept Description
+Correctly Classified Instances         670               67      %
+Correctly Classified Instances         692               69.2    %
+IB3 Classifier with 377 instances saved in the Concept Description
+Correctly Classified Instances         783               78.3    %
+Correctly Classified Instances         736               73.6    %
+Running classifiers for 9% noise on seed of 10 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp9.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         793               79.3    %
+Correctly Classified Instances         754               75.4    %
+IB2 Classifier with 338 instances saved in the Concept Description
+Correctly Classified Instances         670               67      %
+Correctly Classified Instances         694               69.4    %
+IB3 Classifier with 377 instances saved in the Concept Description
+Correctly Classified Instances         783               78.3    %
+Correctly Classified Instances         730               73      %
+Running classifiers for 10% noise on seed of 1 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp10.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         771               77.1    %
+Correctly Classified Instances         724               72.4    %
+IB2 Classifier with 366 instances saved in the Concept Description
+Correctly Classified Instances         658               65.8    %
+Correctly Classified Instances         654               65.4    %
+IB3 Classifier with 414 instances saved in the Concept Description
+Correctly Classified Instances         753               75.3    %
+Correctly Classified Instances         706               70.6    %
+Running classifiers for 10% noise on seed of 2 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp10.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         771               77.1    %
+Correctly Classified Instances         721               72.1    %
+IB2 Classifier with 366 instances saved in the Concept Description
+Correctly Classified Instances         658               65.8    %
+Correctly Classified Instances         688               68.8    %
+IB3 Classifier with 414 instances saved in the Concept Description
+Correctly Classified Instances         753               75.3    %
+Correctly Classified Instances         711               71.1    %
+Running classifiers for 10% noise on seed of 3 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp10.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         771               77.1    %
+Correctly Classified Instances         717               71.7    %
+IB2 Classifier with 366 instances saved in the Concept Description
+Correctly Classified Instances         658               65.8    %
+Correctly Classified Instances         646               64.6    %
+IB3 Classifier with 414 instances saved in the Concept Description
+Correctly Classified Instances         753               75.3    %
+Correctly Classified Instances         708               70.8    %
+Running classifiers for 10% noise on seed of 4 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp10.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         771               77.1    %
+Correctly Classified Instances         718               71.8    %
+IB2 Classifier with 366 instances saved in the Concept Description
+Correctly Classified Instances         658               65.8    %
+Correctly Classified Instances         653               65.3    %
+IB3 Classifier with 414 instances saved in the Concept Description
+Correctly Classified Instances         753               75.3    %
+Correctly Classified Instances         712               71.2    %
+Running classifiers for 10% noise on seed of 5 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp10.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         771               77.1    %
+Correctly Classified Instances         715               71.5    %
+IB2 Classifier with 366 instances saved in the Concept Description
+Correctly Classified Instances         658               65.8    %
+Correctly Classified Instances         657               65.7    %
+IB3 Classifier with 414 instances saved in the Concept Description
+Correctly Classified Instances         753               75.3    %
+Correctly Classified Instances         698               69.8    %
+Running classifiers for 10% noise on seed of 6 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp10.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         771               77.1    %
+Correctly Classified Instances         717               71.7    %
+IB2 Classifier with 366 instances saved in the Concept Description
+Correctly Classified Instances         658               65.8    %
+Correctly Classified Instances         652               65.2    %
+IB3 Classifier with 414 instances saved in the Concept Description
+Correctly Classified Instances         753               75.3    %
+Correctly Classified Instances         698               69.8    %
+Running classifiers for 10% noise on seed of 7 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp10.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         771               77.1    %
+Correctly Classified Instances         718               71.8    %
+IB2 Classifier with 366 instances saved in the Concept Description
+Correctly Classified Instances         658               65.8    %
+Correctly Classified Instances         656               65.6    %
+IB3 Classifier with 414 instances saved in the Concept Description
+Correctly Classified Instances         753               75.3    %
+Correctly Classified Instances         690               69      %
+Running classifiers for 10% noise on seed of 8 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp10.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         771               77.1    %
+Correctly Classified Instances         724               72.4    %
+IB2 Classifier with 366 instances saved in the Concept Description
+Correctly Classified Instances         658               65.8    %
+Correctly Classified Instances         640               64      %
+IB3 Classifier with 414 instances saved in the Concept Description
+Correctly Classified Instances         753               75.3    %
+Correctly Classified Instances         707               70.7    %
+Running classifiers for 10% noise on seed of 9 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp10.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         771               77.1    %
+Correctly Classified Instances         719               71.9    %
+IB2 Classifier with 366 instances saved in the Concept Description
+Correctly Classified Instances         658               65.8    %
+Correctly Classified Instances         642               64.2    %
+IB3 Classifier with 414 instances saved in the Concept Description
+Correctly Classified Instances         753               75.3    %
+Correctly Classified Instances         683               68.3    %
+Running classifiers for 10% noise on seed of 10 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp10.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         771               77.1    %
+Correctly Classified Instances         717               71.7    %
+IB2 Classifier with 366 instances saved in the Concept Description
+Correctly Classified Instances         658               65.8    %
+Correctly Classified Instances         658               65.8    %
+IB3 Classifier with 414 instances saved in the Concept Description
+Correctly Classified Instances         753               75.3    %
+Correctly Classified Instances         714               71.4    %
+Running classifiers for 11% noise on seed of 1 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp11.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         749               74.9    %
+Correctly Classified Instances         702               70.2    %
+IB2 Classifier with 395 instances saved in the Concept Description
+Correctly Classified Instances         647               64.7    %
+Correctly Classified Instances         621               62.1    %
+IB3 Classifier with 428 instances saved in the Concept Description
+Correctly Classified Instances         731               73.1    %
+Correctly Classified Instances         669               66.9    %
+Running classifiers for 11% noise on seed of 2 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp11.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         749               74.9    %
+Correctly Classified Instances         703               70.3    %
+IB2 Classifier with 395 instances saved in the Concept Description
+Correctly Classified Instances         647               64.7    %
+Correctly Classified Instances         644               64.4    %
+IB3 Classifier with 428 instances saved in the Concept Description
+Correctly Classified Instances         731               73.1    %
+Correctly Classified Instances         688               68.8    %
+Running classifiers for 11% noise on seed of 3 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp11.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         749               74.9    %
+Correctly Classified Instances         700               70      %
+IB2 Classifier with 395 instances saved in the Concept Description
+Correctly Classified Instances         647               64.7    %
+Correctly Classified Instances         636               63.6    %
+IB3 Classifier with 428 instances saved in the Concept Description
+Correctly Classified Instances         731               73.1    %
+Correctly Classified Instances         685               68.5    %
+Running classifiers for 11% noise on seed of 4 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp11.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         749               74.9    %
+Correctly Classified Instances         704               70.4    %
+IB2 Classifier with 395 instances saved in the Concept Description
+Correctly Classified Instances         647               64.7    %
+Correctly Classified Instances         615               61.5    %
+IB3 Classifier with 428 instances saved in the Concept Description
+Correctly Classified Instances         731               73.1    %
+Correctly Classified Instances         684               68.4    %
+Running classifiers for 11% noise on seed of 5 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp11.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         749               74.9    %
+Correctly Classified Instances         700               70      %
+IB2 Classifier with 395 instances saved in the Concept Description
+Correctly Classified Instances         647               64.7    %
+Correctly Classified Instances         631               63.1    %
+IB3 Classifier with 428 instances saved in the Concept Description
+Correctly Classified Instances         731               73.1    %
+Correctly Classified Instances         671               67.1    %
+Running classifiers for 11% noise on seed of 6 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp11.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         749               74.9    %
+Correctly Classified Instances         694               69.4    %
+IB2 Classifier with 395 instances saved in the Concept Description
+Correctly Classified Instances         647               64.7    %
+Correctly Classified Instances         631               63.1    %
+IB3 Classifier with 428 instances saved in the Concept Description
+Correctly Classified Instances         731               73.1    %
+Correctly Classified Instances         674               67.4    %
+Running classifiers for 11% noise on seed of 7 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp11.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         749               74.9    %
+Correctly Classified Instances         690               69      %
+IB2 Classifier with 395 instances saved in the Concept Description
+Correctly Classified Instances         647               64.7    %
+Correctly Classified Instances         628               62.8    %
+IB3 Classifier with 428 instances saved in the Concept Description
+Correctly Classified Instances         731               73.1    %
+Correctly Classified Instances         653               65.3    %
+Running classifiers for 11% noise on seed of 8 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp11.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         749               74.9    %
+Correctly Classified Instances         704               70.4    %
+IB2 Classifier with 395 instances saved in the Concept Description
+Correctly Classified Instances         647               64.7    %
+Correctly Classified Instances         620               62      %
+IB3 Classifier with 428 instances saved in the Concept Description
+Correctly Classified Instances         731               73.1    %
+Correctly Classified Instances         670               67      %
+Running classifiers for 11% noise on seed of 9 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp11.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         749               74.9    %
+Correctly Classified Instances         694               69.4    %
+IB2 Classifier with 395 instances saved in the Concept Description
+Correctly Classified Instances         647               64.7    %
+Correctly Classified Instances         629               62.9    %
+IB3 Classifier with 428 instances saved in the Concept Description
+Correctly Classified Instances         731               73.1    %
+Correctly Classified Instances         676               67.6    %
+Running classifiers for 11% noise on seed of 10 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp11.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         749               74.9    %
+Correctly Classified Instances         693               69.3    %
+IB2 Classifier with 395 instances saved in the Concept Description
+Correctly Classified Instances         647               64.7    %
+Correctly Classified Instances         635               63.5    %
+IB3 Classifier with 428 instances saved in the Concept Description
+Correctly Classified Instances         731               73.1    %
+Correctly Classified Instances         682               68.2    %
+Running classifiers for 12% noise on seed of 1 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp12.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         728               72.8    %
+Correctly Classified Instances         675               67.5    %
+IB2 Classifier with 415 instances saved in the Concept Description
+Correctly Classified Instances         668               66.8    %
+Correctly Classified Instances         607               60.7    %
+IB3 Classifier with 458 instances saved in the Concept Description
+Correctly Classified Instances         708               70.8    %
+Correctly Classified Instances         643               64.3    %
+Running classifiers for 12% noise on seed of 2 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp12.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         728               72.8    %
+Correctly Classified Instances         678               67.8    %
+IB2 Classifier with 415 instances saved in the Concept Description
+Correctly Classified Instances         668               66.8    %
+Correctly Classified Instances         623               62.3    %
+IB3 Classifier with 458 instances saved in the Concept Description
+Correctly Classified Instances         708               70.8    %
+Correctly Classified Instances         652               65.2    %
+Running classifiers for 12% noise on seed of 3 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp12.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         728               72.8    %
+Correctly Classified Instances         674               67.4    %
+IB2 Classifier with 415 instances saved in the Concept Description
+Correctly Classified Instances         668               66.8    %
+Correctly Classified Instances         619               61.9    %
+IB3 Classifier with 458 instances saved in the Concept Description
+Correctly Classified Instances         708               70.8    %
+Correctly Classified Instances         662               66.2    %
+Running classifiers for 12% noise on seed of 4 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp12.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         728               72.8    %
+Correctly Classified Instances         675               67.5    %
+IB2 Classifier with 415 instances saved in the Concept Description
+Correctly Classified Instances         668               66.8    %
+Correctly Classified Instances         606               60.6    %
+IB3 Classifier with 458 instances saved in the Concept Description
+Correctly Classified Instances         708               70.8    %
+Correctly Classified Instances         662               66.2    %
+Running classifiers for 12% noise on seed of 5 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp12.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         728               72.8    %
+Correctly Classified Instances         674               67.4    %
+IB2 Classifier with 415 instances saved in the Concept Description
+Correctly Classified Instances         668               66.8    %
+Correctly Classified Instances         609               60.9    %
+IB3 Classifier with 458 instances saved in the Concept Description
+Correctly Classified Instances         708               70.8    %
+Correctly Classified Instances         659               65.9    %
+Running classifiers for 12% noise on seed of 6 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp12.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         728               72.8    %
+Correctly Classified Instances         669               66.9    %
+IB2 Classifier with 415 instances saved in the Concept Description
+Correctly Classified Instances         668               66.8    %
+Correctly Classified Instances         616               61.6    %
+IB3 Classifier with 458 instances saved in the Concept Description
+Correctly Classified Instances         708               70.8    %
+Correctly Classified Instances         658               65.8    %
+Running classifiers for 12% noise on seed of 7 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp12.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         728               72.8    %
+Correctly Classified Instances         671               67.1    %
+IB2 Classifier with 415 instances saved in the Concept Description
+Correctly Classified Instances         668               66.8    %
+Correctly Classified Instances         605               60.5    %
+IB3 Classifier with 458 instances saved in the Concept Description
+Correctly Classified Instances         708               70.8    %
+Correctly Classified Instances         640               64      %
+Running classifiers for 12% noise on seed of 8 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp12.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         728               72.8    %
+Correctly Classified Instances         676               67.6    %
+IB2 Classifier with 415 instances saved in the Concept Description
+Correctly Classified Instances         668               66.8    %
+Correctly Classified Instances         612               61.2    %
+IB3 Classifier with 458 instances saved in the Concept Description
+Correctly Classified Instances         708               70.8    %
+Correctly Classified Instances         648               64.8    %
+Running classifiers for 12% noise on seed of 9 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp12.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         728               72.8    %
+Correctly Classified Instances         663               66.3    %
+IB2 Classifier with 415 instances saved in the Concept Description
+Correctly Classified Instances         668               66.8    %
+Correctly Classified Instances         616               61.6    %
+IB3 Classifier with 458 instances saved in the Concept Description
+Correctly Classified Instances         708               70.8    %
+Correctly Classified Instances         647               64.7    %
+Running classifiers for 12% noise on seed of 10 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp12.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         728               72.8    %
+Correctly Classified Instances         669               66.9    %
+IB2 Classifier with 415 instances saved in the Concept Description
+Correctly Classified Instances         668               66.8    %
+Correctly Classified Instances         614               61.4    %
+IB3 Classifier with 458 instances saved in the Concept Description
+Correctly Classified Instances         708               70.8    %
+Correctly Classified Instances         655               65.5    %
+Running classifiers for 13% noise on seed of 1 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp13.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         716               71.6    %
+Correctly Classified Instances         650               65      %
+IB2 Classifier with 430 instances saved in the Concept Description
+Correctly Classified Instances         666               66.6    %
+Correctly Classified Instances         601               60.1    %
+IB3 Classifier with 474 instances saved in the Concept Description
+Correctly Classified Instances         701               70.1    %
+Correctly Classified Instances         624               62.4    %
+Running classifiers for 13% noise on seed of 2 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp13.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         716               71.6    %
+Correctly Classified Instances         655               65.5    %
+IB2 Classifier with 430 instances saved in the Concept Description
+Correctly Classified Instances         666               66.6    %
+Correctly Classified Instances         610               61      %
+IB3 Classifier with 474 instances saved in the Concept Description
+Correctly Classified Instances         701               70.1    %
+Correctly Classified Instances         640               64      %
+Running classifiers for 13% noise on seed of 3 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp13.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         716               71.6    %
+Correctly Classified Instances         650               65      %
+IB2 Classifier with 430 instances saved in the Concept Description
+Correctly Classified Instances         666               66.6    %
+Correctly Classified Instances         610               61      %
+IB3 Classifier with 474 instances saved in the Concept Description
+Correctly Classified Instances         701               70.1    %
+Correctly Classified Instances         657               65.7    %
+Running classifiers for 13% noise on seed of 4 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp13.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         716               71.6    %
+Correctly Classified Instances         656               65.6    %
+IB2 Classifier with 430 instances saved in the Concept Description
+Correctly Classified Instances         666               66.6    %
+Correctly Classified Instances         575               57.5    %
+IB3 Classifier with 474 instances saved in the Concept Description
+Correctly Classified Instances         701               70.1    %
+Correctly Classified Instances         640               64      %
+Running classifiers for 13% noise on seed of 5 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp13.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         716               71.6    %
+Correctly Classified Instances         651               65.1    %
+IB2 Classifier with 430 instances saved in the Concept Description
+Correctly Classified Instances         666               66.6    %
+Correctly Classified Instances         599               59.9    %
+IB3 Classifier with 474 instances saved in the Concept Description
+Correctly Classified Instances         701               70.1    %
+Correctly Classified Instances         639               63.9    %
+Running classifiers for 13% noise on seed of 6 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp13.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         716               71.6    %
+Correctly Classified Instances         649               64.9    %
+IB2 Classifier with 430 instances saved in the Concept Description
+Correctly Classified Instances         666               66.6    %
+Correctly Classified Instances         607               60.7    %
+IB3 Classifier with 474 instances saved in the Concept Description
+Correctly Classified Instances         701               70.1    %
+Correctly Classified Instances         645               64.5    %
+Running classifiers for 13% noise on seed of 7 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp13.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         716               71.6    %
+Correctly Classified Instances         646               64.6    %
+IB2 Classifier with 430 instances saved in the Concept Description
+Correctly Classified Instances         666               66.6    %
+Correctly Classified Instances         589               58.9    %
+IB3 Classifier with 474 instances saved in the Concept Description
+Correctly Classified Instances         701               70.1    %
+Correctly Classified Instances         635               63.5    %
+Running classifiers for 13% noise on seed of 8 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp13.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         716               71.6    %
+Correctly Classified Instances         658               65.8    %
+IB2 Classifier with 430 instances saved in the Concept Description
+Correctly Classified Instances         666               66.6    %
+Correctly Classified Instances         596               59.6    %
+IB3 Classifier with 474 instances saved in the Concept Description
+Correctly Classified Instances         701               70.1    %
+Correctly Classified Instances         643               64.3    %
+Running classifiers for 13% noise on seed of 9 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp13.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         716               71.6    %
+Correctly Classified Instances         639               63.9    %
+IB2 Classifier with 430 instances saved in the Concept Description
+Correctly Classified Instances         666               66.6    %
+Correctly Classified Instances         603               60.3    %
+IB3 Classifier with 474 instances saved in the Concept Description
+Correctly Classified Instances         701               70.1    %
+Correctly Classified Instances         633               63.3    %
+Running classifiers for 13% noise on seed of 10 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp13.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         716               71.6    %
+Correctly Classified Instances         647               64.7    %
+IB2 Classifier with 430 instances saved in the Concept Description
+Correctly Classified Instances         666               66.6    %
+Correctly Classified Instances         602               60.2    %
+IB3 Classifier with 474 instances saved in the Concept Description
+Correctly Classified Instances         701               70.1    %
+Correctly Classified Instances         637               63.7    %
+Running classifiers for 14% noise on seed of 1 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp14.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         701               70.1    %
+Correctly Classified Instances         632               63.2    %
+IB2 Classifier with 449 instances saved in the Concept Description
+Correctly Classified Instances         656               65.6    %
+Correctly Classified Instances         564               56.4    %
+IB3 Classifier with 490 instances saved in the Concept Description
+Correctly Classified Instances         687               68.7    %
+Correctly Classified Instances         620               62      %
+Running classifiers for 14% noise on seed of 2 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp14.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         701               70.1    %
+Correctly Classified Instances         635               63.5    %
+IB2 Classifier with 449 instances saved in the Concept Description
+Correctly Classified Instances         656               65.6    %
+Correctly Classified Instances         569               56.9    %
+IB3 Classifier with 490 instances saved in the Concept Description
+Correctly Classified Instances         687               68.7    %
+Correctly Classified Instances         616               61.6    %
+Running classifiers for 14% noise on seed of 3 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp14.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         701               70.1    %
+Correctly Classified Instances         635               63.5    %
+IB2 Classifier with 449 instances saved in the Concept Description
+Correctly Classified Instances         656               65.6    %
+Correctly Classified Instances         576               57.6    %
+IB3 Classifier with 490 instances saved in the Concept Description
+Correctly Classified Instances         687               68.7    %
+Correctly Classified Instances         614               61.4    %
+Running classifiers for 14% noise on seed of 4 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp14.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         701               70.1    %
+Correctly Classified Instances         635               63.5    %
+IB2 Classifier with 449 instances saved in the Concept Description
+Correctly Classified Instances         656               65.6    %
+Correctly Classified Instances         532               53.2    %
+IB3 Classifier with 490 instances saved in the Concept Description
+Correctly Classified Instances         687               68.7    %
+Correctly Classified Instances         614               61.4    %
+Running classifiers for 14% noise on seed of 5 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp14.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         701               70.1    %
+Correctly Classified Instances         625               62.5    %
+IB2 Classifier with 449 instances saved in the Concept Description
+Correctly Classified Instances         656               65.6    %
+Correctly Classified Instances         572               57.2    %
+IB3 Classifier with 490 instances saved in the Concept Description
+Correctly Classified Instances         687               68.7    %
+Correctly Classified Instances         607               60.7    %
+Running classifiers for 14% noise on seed of 6 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp14.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         701               70.1    %
+Correctly Classified Instances         632               63.2    %
+IB2 Classifier with 449 instances saved in the Concept Description
+Correctly Classified Instances         656               65.6    %
+Correctly Classified Instances         592               59.2    %
+IB3 Classifier with 490 instances saved in the Concept Description
+Correctly Classified Instances         687               68.7    %
+Correctly Classified Instances         623               62.3    %
+Running classifiers for 14% noise on seed of 7 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp14.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         701               70.1    %
+Correctly Classified Instances         631               63.1    %
+IB2 Classifier with 449 instances saved in the Concept Description
+Correctly Classified Instances         656               65.6    %
+Correctly Classified Instances         583               58.3    %
+IB3 Classifier with 490 instances saved in the Concept Description
+Correctly Classified Instances         687               68.7    %
+Correctly Classified Instances         612               61.2    %
+Running classifiers for 14% noise on seed of 8 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp14.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         701               70.1    %
+Correctly Classified Instances         636               63.6    %
+IB2 Classifier with 449 instances saved in the Concept Description
+Correctly Classified Instances         656               65.6    %
+Correctly Classified Instances         573               57.3    %
+IB3 Classifier with 490 instances saved in the Concept Description
+Correctly Classified Instances         687               68.7    %
+Correctly Classified Instances         610               61      %
+Running classifiers for 14% noise on seed of 9 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp14.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         701               70.1    %
+Correctly Classified Instances         625               62.5    %
+IB2 Classifier with 449 instances saved in the Concept Description
+Correctly Classified Instances         656               65.6    %
+Correctly Classified Instances         583               58.3    %
+IB3 Classifier with 490 instances saved in the Concept Description
+Correctly Classified Instances         687               68.7    %
+Correctly Classified Instances         616               61.6    %
+Running classifiers for 14% noise on seed of 10 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp14.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         701               70.1    %
+Correctly Classified Instances         629               62.9    %
+IB2 Classifier with 449 instances saved in the Concept Description
+Correctly Classified Instances         656               65.6    %
+Correctly Classified Instances         586               58.6    %
+IB3 Classifier with 490 instances saved in the Concept Description
+Correctly Classified Instances         687               68.7    %
+Correctly Classified Instances         623               62.3    %
+Running classifiers for 15% noise on seed of 1 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp15.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         677               67.7    %
+Correctly Classified Instances         596               59.6    %
+IB2 Classifier with 474 instances saved in the Concept Description
+Correctly Classified Instances         594               59.4    %
+Correctly Classified Instances         533               53.3    %
+IB3 Classifier with 518 instances saved in the Concept Description
+Correctly Classified Instances         665               66.5    %
+Correctly Classified Instances         578               57.8    %
+Running classifiers for 15% noise on seed of 2 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp15.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         677               67.7    %
+Correctly Classified Instances         602               60.2    %
+IB2 Classifier with 474 instances saved in the Concept Description
+Correctly Classified Instances         594               59.4    %
+Correctly Classified Instances         544               54.4    %
+IB3 Classifier with 518 instances saved in the Concept Description
+Correctly Classified Instances         665               66.5    %
+Correctly Classified Instances         595               59.5    %
+Running classifiers for 15% noise on seed of 3 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp15.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         677               67.7    %
+Correctly Classified Instances         592               59.2    %
+IB2 Classifier with 474 instances saved in the Concept Description
+Correctly Classified Instances         594               59.4    %
+Correctly Classified Instances         540               54      %
+IB3 Classifier with 518 instances saved in the Concept Description
+Correctly Classified Instances         665               66.5    %
+Correctly Classified Instances         575               57.5    %
+Running classifiers for 15% noise on seed of 4 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp15.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         677               67.7    %
+Correctly Classified Instances         594               59.4    %
+IB2 Classifier with 474 instances saved in the Concept Description
+Correctly Classified Instances         594               59.4    %
+Correctly Classified Instances         516               51.6    %
+IB3 Classifier with 518 instances saved in the Concept Description
+Correctly Classified Instances         665               66.5    %
+Correctly Classified Instances         585               58.5    %
+Running classifiers for 15% noise on seed of 5 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp15.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         677               67.7    %
+Correctly Classified Instances         591               59.1    %
+IB2 Classifier with 474 instances saved in the Concept Description
+Correctly Classified Instances         594               59.4    %
+Correctly Classified Instances         548               54.8    %
+IB3 Classifier with 518 instances saved in the Concept Description
+Correctly Classified Instances         665               66.5    %
+Correctly Classified Instances         576               57.6    %
+Running classifiers for 15% noise on seed of 6 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp15.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         677               67.7    %
+Correctly Classified Instances         595               59.5    %
+IB2 Classifier with 474 instances saved in the Concept Description
+Correctly Classified Instances         594               59.4    %
+Correctly Classified Instances         556               55.6    %
+IB3 Classifier with 518 instances saved in the Concept Description
+Correctly Classified Instances         665               66.5    %
+Correctly Classified Instances         581               58.1    %
+Running classifiers for 15% noise on seed of 7 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp15.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         677               67.7    %
+Correctly Classified Instances         597               59.7    %
+IB2 Classifier with 474 instances saved in the Concept Description
+Correctly Classified Instances         594               59.4    %
+Correctly Classified Instances         548               54.8    %
+IB3 Classifier with 518 instances saved in the Concept Description
+Correctly Classified Instances         665               66.5    %
+Correctly Classified Instances         577               57.7    %
+Running classifiers for 15% noise on seed of 8 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp15.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         677               67.7    %
+Correctly Classified Instances         601               60.1    %
+IB2 Classifier with 474 instances saved in the Concept Description
+Correctly Classified Instances         594               59.4    %
+Correctly Classified Instances         545               54.5    %
+IB3 Classifier with 518 instances saved in the Concept Description
+Correctly Classified Instances         665               66.5    %
+Correctly Classified Instances         584               58.4    %
+Running classifiers for 15% noise on seed of 9 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp15.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         677               67.7    %
+Correctly Classified Instances         589               58.9    %
+IB2 Classifier with 474 instances saved in the Concept Description
+Correctly Classified Instances         594               59.4    %
+Correctly Classified Instances         558               55.8    %
+IB3 Classifier with 518 instances saved in the Concept Description
+Correctly Classified Instances         665               66.5    %
+Correctly Classified Instances         598               59.8    %
+Running classifiers for 15% noise on seed of 10 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp15.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         677               67.7    %
+Correctly Classified Instances         597               59.7    %
+IB2 Classifier with 474 instances saved in the Concept Description
+Correctly Classified Instances         594               59.4    %
+Correctly Classified Instances         562               56.2    %
+IB3 Classifier with 518 instances saved in the Concept Description
+Correctly Classified Instances         665               66.5    %
+Correctly Classified Instances         592               59.2    %
+Running classifiers for 16% noise on seed of 1 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp16.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         661               66.1    %
+Correctly Classified Instances         586               58.6    %
+IB2 Classifier with 508 instances saved in the Concept Description
+Correctly Classified Instances         588               58.8    %
+Correctly Classified Instances         502               50.2    %
+IB3 Classifier with 547 instances saved in the Concept Description
+Correctly Classified Instances         645               64.5    %
+Correctly Classified Instances         554               55.4    %
+Running classifiers for 16% noise on seed of 2 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp16.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         661               66.1    %
+Correctly Classified Instances         589               58.9    %
+IB2 Classifier with 508 instances saved in the Concept Description
+Correctly Classified Instances         588               58.8    %
+Correctly Classified Instances         539               53.9    %
+IB3 Classifier with 547 instances saved in the Concept Description
+Correctly Classified Instances         645               64.5    %
+Correctly Classified Instances         561               56.1    %
+Running classifiers for 16% noise on seed of 3 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp16.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         661               66.1    %
+Correctly Classified Instances         574               57.4    %
+IB2 Classifier with 508 instances saved in the Concept Description
+Correctly Classified Instances         588               58.8    %
+Correctly Classified Instances         512               51.2    %
+IB3 Classifier with 547 instances saved in the Concept Description
+Correctly Classified Instances         645               64.5    %
+Correctly Classified Instances         547               54.7    %
+Running classifiers for 16% noise on seed of 4 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp16.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         661               66.1    %
+Correctly Classified Instances         580               58      %
+IB2 Classifier with 508 instances saved in the Concept Description
+Correctly Classified Instances         588               58.8    %
+Correctly Classified Instances         495               49.5    %
+IB3 Classifier with 547 instances saved in the Concept Description
+Correctly Classified Instances         645               64.5    %
+Correctly Classified Instances         567               56.7    %
+Running classifiers for 16% noise on seed of 5 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp16.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         661               66.1    %
+Correctly Classified Instances         579               57.9    %
+IB2 Classifier with 508 instances saved in the Concept Description
+Correctly Classified Instances         588               58.8    %
+Correctly Classified Instances         528               52.8    %
+IB3 Classifier with 547 instances saved in the Concept Description
+Correctly Classified Instances         645               64.5    %
+Correctly Classified Instances         561               56.1    %
+Running classifiers for 16% noise on seed of 6 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp16.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         661               66.1    %
+Correctly Classified Instances         592               59.2    %
+IB2 Classifier with 508 instances saved in the Concept Description
+Correctly Classified Instances         588               58.8    %
+Correctly Classified Instances         551               55.1    %
+IB3 Classifier with 547 instances saved in the Concept Description
+Correctly Classified Instances         645               64.5    %
+Correctly Classified Instances         572               57.2    %
+Running classifiers for 16% noise on seed of 7 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp16.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         661               66.1    %
+Correctly Classified Instances         588               58.8    %
+IB2 Classifier with 508 instances saved in the Concept Description
+Correctly Classified Instances         588               58.8    %
+Correctly Classified Instances         535               53.5    %
+IB3 Classifier with 547 instances saved in the Concept Description
+Correctly Classified Instances         645               64.5    %
+Correctly Classified Instances         568               56.8    %
+Running classifiers for 16% noise on seed of 8 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp16.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         661               66.1    %
+Correctly Classified Instances         596               59.6    %
+IB2 Classifier with 508 instances saved in the Concept Description
+Correctly Classified Instances         588               58.8    %
+Correctly Classified Instances         521               52.1    %
+IB3 Classifier with 547 instances saved in the Concept Description
+Correctly Classified Instances         645               64.5    %
+Correctly Classified Instances         564               56.4    %
+Running classifiers for 16% noise on seed of 9 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp16.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         661               66.1    %
+Correctly Classified Instances         584               58.4    %
+IB2 Classifier with 508 instances saved in the Concept Description
+Correctly Classified Instances         588               58.8    %
+Correctly Classified Instances         530               53      %
+IB3 Classifier with 547 instances saved in the Concept Description
+Correctly Classified Instances         645               64.5    %
+Correctly Classified Instances         562               56.2    %
+Running classifiers for 16% noise on seed of 10 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp16.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         661               66.1    %
+Correctly Classified Instances         578               57.8    %
+IB2 Classifier with 508 instances saved in the Concept Description
+Correctly Classified Instances         588               58.8    %
+Correctly Classified Instances         547               54.7    %
+IB3 Classifier with 547 instances saved in the Concept Description
+Correctly Classified Instances         645               64.5    %
+Correctly Classified Instances         566               56.6    %
+Running classifiers for 17% noise on seed of 1 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp17.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         644               64.4    %
+Correctly Classified Instances         578               57.8    %
+IB2 Classifier with 518 instances saved in the Concept Description
+Correctly Classified Instances         594               59.4    %
+Correctly Classified Instances         485               48.5    %
+IB3 Classifier with 559 instances saved in the Concept Description
+Correctly Classified Instances         621               62.1    %
+Correctly Classified Instances         554               55.4    %
+Running classifiers for 17% noise on seed of 2 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp17.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         644               64.4    %
+Correctly Classified Instances         569               56.9    %
+IB2 Classifier with 518 instances saved in the Concept Description
+Correctly Classified Instances         594               59.4    %
+Correctly Classified Instances         518               51.8    %
+IB3 Classifier with 559 instances saved in the Concept Description
+Correctly Classified Instances         621               62.1    %
+Correctly Classified Instances         550               55      %
+Running classifiers for 17% noise on seed of 3 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp17.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         644               64.4    %
+Correctly Classified Instances         563               56.3    %
+IB2 Classifier with 518 instances saved in the Concept Description
+Correctly Classified Instances         594               59.4    %
+Correctly Classified Instances         502               50.2    %
+IB3 Classifier with 559 instances saved in the Concept Description
+Correctly Classified Instances         621               62.1    %
+Correctly Classified Instances         540               54      %
+Running classifiers for 17% noise on seed of 4 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp17.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         644               64.4    %
+Correctly Classified Instances         572               57.2    %
+IB2 Classifier with 518 instances saved in the Concept Description
+Correctly Classified Instances         594               59.4    %
+Correctly Classified Instances         490               49      %
+IB3 Classifier with 559 instances saved in the Concept Description
+Correctly Classified Instances         621               62.1    %
+Correctly Classified Instances         563               56.3    %
+Running classifiers for 17% noise on seed of 5 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp17.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         644               64.4    %
+Correctly Classified Instances         567               56.7    %
+IB2 Classifier with 518 instances saved in the Concept Description
+Correctly Classified Instances         594               59.4    %
+Correctly Classified Instances         498               49.8    %
+IB3 Classifier with 559 instances saved in the Concept Description
+Correctly Classified Instances         621               62.1    %
+Correctly Classified Instances         532               53.2    %
+Running classifiers for 17% noise on seed of 6 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp17.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         644               64.4    %
+Correctly Classified Instances         579               57.9    %
+IB2 Classifier with 518 instances saved in the Concept Description
+Correctly Classified Instances         594               59.4    %
+Correctly Classified Instances         526               52.6    %
+IB3 Classifier with 559 instances saved in the Concept Description
+Correctly Classified Instances         621               62.1    %
+Correctly Classified Instances         553               55.3    %
+Running classifiers for 17% noise on seed of 7 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp17.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         644               64.4    %
+Correctly Classified Instances         571               57.1    %
+IB2 Classifier with 518 instances saved in the Concept Description
+Correctly Classified Instances         594               59.4    %
+Correctly Classified Instances         507               50.7    %
+IB3 Classifier with 559 instances saved in the Concept Description
+Correctly Classified Instances         621               62.1    %
+Correctly Classified Instances         544               54.4    %
+Running classifiers for 17% noise on seed of 8 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp17.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         644               64.4    %
+Correctly Classified Instances         576               57.6    %
+IB2 Classifier with 518 instances saved in the Concept Description
+Correctly Classified Instances         594               59.4    %
+Correctly Classified Instances         507               50.7    %
+IB3 Classifier with 559 instances saved in the Concept Description
+Correctly Classified Instances         621               62.1    %
+Correctly Classified Instances         558               55.8    %
+Running classifiers for 17% noise on seed of 9 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp17.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         644               64.4    %
+Correctly Classified Instances         570               57      %
+IB2 Classifier with 518 instances saved in the Concept Description
+Correctly Classified Instances         594               59.4    %
+Correctly Classified Instances         516               51.6    %
+IB3 Classifier with 559 instances saved in the Concept Description
+Correctly Classified Instances         621               62.1    %
+Correctly Classified Instances         569               56.9    %
+Running classifiers for 17% noise on seed of 10 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp17.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         644               64.4    %
+Correctly Classified Instances         569               56.9    %
+IB2 Classifier with 518 instances saved in the Concept Description
+Correctly Classified Instances         594               59.4    %
+Correctly Classified Instances         531               53.1    %
+IB3 Classifier with 559 instances saved in the Concept Description
+Correctly Classified Instances         621               62.1    %
+Correctly Classified Instances         544               54.4    %
+Running classifiers for 18% noise on seed of 1 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp18.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         633               63.3    %
+Correctly Classified Instances         564               56.4    %
+IB2 Classifier with 536 instances saved in the Concept Description
+Correctly Classified Instances         584               58.4    %
+Correctly Classified Instances         486               48.6    %
+IB3 Classifier with 568 instances saved in the Concept Description
+Correctly Classified Instances         604               60.4    %
+Correctly Classified Instances         534               53.4    %
+Running classifiers for 18% noise on seed of 2 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp18.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         633               63.3    %
+Correctly Classified Instances         568               56.8    %
+IB2 Classifier with 536 instances saved in the Concept Description
+Correctly Classified Instances         584               58.4    %
+Correctly Classified Instances         494               49.4    %
+IB3 Classifier with 568 instances saved in the Concept Description
+Correctly Classified Instances         604               60.4    %
+Correctly Classified Instances         518               51.8    %
+Running classifiers for 18% noise on seed of 3 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp18.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         633               63.3    %
+Correctly Classified Instances         557               55.7    %
+IB2 Classifier with 536 instances saved in the Concept Description
+Correctly Classified Instances         584               58.4    %
+Correctly Classified Instances         475               47.5    %
+IB3 Classifier with 568 instances saved in the Concept Description
+Correctly Classified Instances         604               60.4    %
+Correctly Classified Instances         523               52.3    %
+Running classifiers for 18% noise on seed of 4 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp18.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         633               63.3    %
+Correctly Classified Instances         568               56.8    %
+IB2 Classifier with 536 instances saved in the Concept Description
+Correctly Classified Instances         584               58.4    %
+Correctly Classified Instances         482               48.2    %
+IB3 Classifier with 568 instances saved in the Concept Description
+Correctly Classified Instances         604               60.4    %
+Correctly Classified Instances         533               53.3    %
+Running classifiers for 18% noise on seed of 5 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp18.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         633               63.3    %
+Correctly Classified Instances         553               55.3    %
+IB2 Classifier with 536 instances saved in the Concept Description
+Correctly Classified Instances         584               58.4    %
+Correctly Classified Instances         482               48.2    %
+IB3 Classifier with 568 instances saved in the Concept Description
+Correctly Classified Instances         604               60.4    %
+Correctly Classified Instances         507               50.7    %
+Running classifiers for 18% noise on seed of 6 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp18.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         633               63.3    %
+Correctly Classified Instances         573               57.3    %
+IB2 Classifier with 536 instances saved in the Concept Description
+Correctly Classified Instances         584               58.4    %
+Correctly Classified Instances         514               51.4    %
+IB3 Classifier with 568 instances saved in the Concept Description
+Correctly Classified Instances         604               60.4    %
+Correctly Classified Instances         535               53.5    %
+Running classifiers for 18% noise on seed of 7 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp18.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         633               63.3    %
+Correctly Classified Instances         560               56      %
+IB2 Classifier with 536 instances saved in the Concept Description
+Correctly Classified Instances         584               58.4    %
+Correctly Classified Instances         497               49.7    %
+IB3 Classifier with 568 instances saved in the Concept Description
+Correctly Classified Instances         604               60.4    %
+Correctly Classified Instances         541               54.1    %
+Running classifiers for 18% noise on seed of 8 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp18.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         633               63.3    %
+Correctly Classified Instances         569               56.9    %
+IB2 Classifier with 536 instances saved in the Concept Description
+Correctly Classified Instances         584               58.4    %
+Correctly Classified Instances         488               48.8    %
+IB3 Classifier with 568 instances saved in the Concept Description
+Correctly Classified Instances         604               60.4    %
+Correctly Classified Instances         541               54.1    %
+Running classifiers for 18% noise on seed of 9 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp18.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         633               63.3    %
+Correctly Classified Instances         563               56.3    %
+IB2 Classifier with 536 instances saved in the Concept Description
+Correctly Classified Instances         584               58.4    %
+Correctly Classified Instances         499               49.9    %
+IB3 Classifier with 568 instances saved in the Concept Description
+Correctly Classified Instances         604               60.4    %
+Correctly Classified Instances         541               54.1    %
+Running classifiers for 18% noise on seed of 10 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp18.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         633               63.3    %
+Correctly Classified Instances         560               56      %
+IB2 Classifier with 536 instances saved in the Concept Description
+Correctly Classified Instances         584               58.4    %
+Correctly Classified Instances         518               51.8    %
+IB3 Classifier with 568 instances saved in the Concept Description
+Correctly Classified Instances         604               60.4    %
+Correctly Classified Instances         517               51.7    %
+Running classifiers for 19% noise on seed of 1 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp19.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         612               61.2    %
+Correctly Classified Instances         545               54.5    %
+IB2 Classifier with 550 instances saved in the Concept Description
+Correctly Classified Instances         531               53.1    %
+Correctly Classified Instances         472               47.2    %
+IB3 Classifier with 599 instances saved in the Concept Description
+Correctly Classified Instances         592               59.2    %
+Correctly Classified Instances         522               52.2    %
+Running classifiers for 19% noise on seed of 2 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp19.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         612               61.2    %
+Correctly Classified Instances         544               54.4    %
+IB2 Classifier with 550 instances saved in the Concept Description
+Correctly Classified Instances         531               53.1    %
+Correctly Classified Instances         454               45.4    %
+IB3 Classifier with 599 instances saved in the Concept Description
+Correctly Classified Instances         592               59.2    %
+Correctly Classified Instances         499               49.9    %
+Running classifiers for 19% noise on seed of 3 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp19.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         612               61.2    %
+Correctly Classified Instances         536               53.6    %
+IB2 Classifier with 550 instances saved in the Concept Description
+Correctly Classified Instances         531               53.1    %
+Correctly Classified Instances         465               46.5    %
+IB3 Classifier with 599 instances saved in the Concept Description
+Correctly Classified Instances         592               59.2    %
+Correctly Classified Instances         501               50.1    %
+Running classifiers for 19% noise on seed of 4 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp19.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         612               61.2    %
+Correctly Classified Instances         543               54.3    %
+IB2 Classifier with 550 instances saved in the Concept Description
+Correctly Classified Instances         531               53.1    %
+Correctly Classified Instances         472               47.2    %
+IB3 Classifier with 599 instances saved in the Concept Description
+Correctly Classified Instances         592               59.2    %
+Correctly Classified Instances         520               52      %
+Running classifiers for 19% noise on seed of 5 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp19.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         612               61.2    %
+Correctly Classified Instances         533               53.3    %
+IB2 Classifier with 550 instances saved in the Concept Description
+Correctly Classified Instances         531               53.1    %
+Correctly Classified Instances         460               46      %
+IB3 Classifier with 599 instances saved in the Concept Description
+Correctly Classified Instances         592               59.2    %
+Correctly Classified Instances         503               50.3    %
+Running classifiers for 19% noise on seed of 6 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp19.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         612               61.2    %
+Correctly Classified Instances         552               55.2    %
+IB2 Classifier with 550 instances saved in the Concept Description
+Correctly Classified Instances         531               53.1    %
+Correctly Classified Instances         468               46.8    %
+IB3 Classifier with 599 instances saved in the Concept Description
+Correctly Classified Instances         592               59.2    %
+Correctly Classified Instances         509               50.9    %
+Running classifiers for 19% noise on seed of 7 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp19.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         612               61.2    %
+Correctly Classified Instances         538               53.8    %
+IB2 Classifier with 550 instances saved in the Concept Description
+Correctly Classified Instances         531               53.1    %
+Correctly Classified Instances         471               47.1    %
+IB3 Classifier with 599 instances saved in the Concept Description
+Correctly Classified Instances         592               59.2    %
+Correctly Classified Instances         508               50.8    %
+Running classifiers for 19% noise on seed of 8 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp19.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         612               61.2    %
+Correctly Classified Instances         543               54.3    %
+IB2 Classifier with 550 instances saved in the Concept Description
+Correctly Classified Instances         531               53.1    %
+Correctly Classified Instances         483               48.3    %
+IB3 Classifier with 599 instances saved in the Concept Description
+Correctly Classified Instances         592               59.2    %
+Correctly Classified Instances         523               52.3    %
+Running classifiers for 19% noise on seed of 9 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp19.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         612               61.2    %
+Correctly Classified Instances         542               54.2    %
+IB2 Classifier with 550 instances saved in the Concept Description
+Correctly Classified Instances         531               53.1    %
+Correctly Classified Instances         479               47.9    %
+IB3 Classifier with 599 instances saved in the Concept Description
+Correctly Classified Instances         592               59.2    %
+Correctly Classified Instances         529               52.9    %
+Running classifiers for 19% noise on seed of 10 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp19.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         612               61.2    %
+Correctly Classified Instances         548               54.8    %
+IB2 Classifier with 550 instances saved in the Concept Description
+Correctly Classified Instances         531               53.1    %
+Correctly Classified Instances         484               48.4    %
+IB3 Classifier with 599 instances saved in the Concept Description
+Correctly Classified Instances         592               59.2    %
+Correctly Classified Instances         517               51.7    %
+Running classifiers for 20% noise on seed of 1 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp20.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         598               59.8    %
+Correctly Classified Instances         520               52      %
+IB2 Classifier with 574 instances saved in the Concept Description
+Correctly Classified Instances         510               51      %
+Correctly Classified Instances         443               44.3    %
+IB3 Classifier with 609 instances saved in the Concept Description
+Correctly Classified Instances         561               56.1    %
+Correctly Classified Instances         498               49.8    %
+Running classifiers for 20% noise on seed of 2 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp20.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         598               59.8    %
+Correctly Classified Instances         522               52.2    %
+IB2 Classifier with 574 instances saved in the Concept Description
+Correctly Classified Instances         510               51      %
+Correctly Classified Instances         439               43.9    %
+IB3 Classifier with 609 instances saved in the Concept Description
+Correctly Classified Instances         561               56.1    %
+Correctly Classified Instances         484               48.4    %
+Running classifiers for 20% noise on seed of 3 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp20.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         598               59.8    %
+Correctly Classified Instances         515               51.5    %
+IB2 Classifier with 574 instances saved in the Concept Description
+Correctly Classified Instances         510               51      %
+Correctly Classified Instances         427               42.7    %
+IB3 Classifier with 609 instances saved in the Concept Description
+Correctly Classified Instances         561               56.1    %
+Correctly Classified Instances         479               47.9    %
+Running classifiers for 20% noise on seed of 4 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp20.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         598               59.8    %
+Correctly Classified Instances         524               52.4    %
+IB2 Classifier with 574 instances saved in the Concept Description
+Correctly Classified Instances         510               51      %
+Correctly Classified Instances         460               46      %
+IB3 Classifier with 609 instances saved in the Concept Description
+Correctly Classified Instances         561               56.1    %
+Correctly Classified Instances         501               50.1    %
+Running classifiers for 20% noise on seed of 5 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp20.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         598               59.8    %
+Correctly Classified Instances         520               52      %
+IB2 Classifier with 574 instances saved in the Concept Description
+Correctly Classified Instances         510               51      %
+Correctly Classified Instances         441               44.1    %
+IB3 Classifier with 609 instances saved in the Concept Description
+Correctly Classified Instances         561               56.1    %
+Correctly Classified Instances         480               48      %
+Running classifiers for 20% noise on seed of 6 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp20.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         598               59.8    %
+Correctly Classified Instances         521               52.1    %
+IB2 Classifier with 574 instances saved in the Concept Description
+Correctly Classified Instances         510               51      %
+Correctly Classified Instances         461               46.1    %
+IB3 Classifier with 609 instances saved in the Concept Description
+Correctly Classified Instances         561               56.1    %
+Correctly Classified Instances         508               50.8    %
+Running classifiers for 20% noise on seed of 7 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp20.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         598               59.8    %
+Correctly Classified Instances         525               52.5    %
+IB2 Classifier with 574 instances saved in the Concept Description
+Correctly Classified Instances         510               51      %
+Correctly Classified Instances         456               45.6    %
+IB3 Classifier with 609 instances saved in the Concept Description
+Correctly Classified Instances         561               56.1    %
+Correctly Classified Instances         496               49.6    %
+Running classifiers for 20% noise on seed of 8 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp20.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         598               59.8    %
+Correctly Classified Instances         514               51.4    %
+IB2 Classifier with 574 instances saved in the Concept Description
+Correctly Classified Instances         510               51      %
+Correctly Classified Instances         447               44.7    %
+IB3 Classifier with 609 instances saved in the Concept Description
+Correctly Classified Instances         561               56.1    %
+Correctly Classified Instances         494               49.4    %
+Running classifiers for 20% noise on seed of 9 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp20.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         598               59.8    %
+Correctly Classified Instances         525               52.5    %
+IB2 Classifier with 574 instances saved in the Concept Description
+Correctly Classified Instances         510               51      %
+Correctly Classified Instances         456               45.6    %
+IB3 Classifier with 609 instances saved in the Concept Description
+Correctly Classified Instances         561               56.1    %
+Correctly Classified Instances         491               49.1    %
+Running classifiers for 20% noise on seed of 10 on datafile: /home/notclaytonjohnson/projects/ds/hw2/LED_data/temp20.arff
+IB1 Classifier with 1000 instances saved in the Concept Description
+Correctly Classified Instances         598               59.8    %
+Correctly Classified Instances         527               52.7    %
+IB2 Classifier with 574 instances saved in the Concept Description
+Correctly Classified Instances         510               51      %
+Correctly Classified Instances         462               46.2    %
+IB3 Classifier with 609 instances saved in the Concept Description
+Correctly Classified Instances         561               56.1    %
+Correctly Classified Instances         489               48.9    %
