@@ -40,6 +40,41 @@ $ java weka.Run weka.classifiers.lazy.IB1.java -t ~/$DATA_PATH/breast-cancer.arf
 
 You can always add the `-h` flag at the end of these commands to receive some help. Additional help may be found in the CLI Documentation link below.
 
+### Automation of Tests
+Since I have quite a few tests to run, I've created the `generate_data` and `run_all` bash scripts to automate this process. Below is an example of what is run in the data script:
+```
+for noise in {0..20} ; do
+  file="./$dir/temp$noise.arff"
+  rm $file 2> /dev/null
+  ./LED 1000 $seed $file $noise >> /dev/null
+  data="$(cat $file)"
+  echo -e "$header\n$data" > $file
+done
+```
+This snippet above will run through the ranges of noise desired for testing. In my case, I am running tests on data from 0-20% noise within the data. Additionally, this script will create (or overwrite) a directory to add all of these files to. The file naming works as `temp0.arff`, where temp can be whatever name and the 0 refers to the percentage of noise introduced by the `LED` program. The `arff` file is automatically prepended with the header information required.   
+The next step would be to hand this information to the classifiers dynamically to require as minimal effort on my part as possible. Considering that there are 20 datasets (0-20% noise with step sizes = 1) and 10 different seeds (1-10) for the three classifiers (IB1, IB2, IB3), there are 600 tests required. The bash script line below is an example of how I am running and filtering the output data from Weka's CLI to improve the efficiency of this process:
+```
+$ java weka.Run weka.classifiers.lazy.IB1 -t $datafile$noise.arff -s $rand 2>/dev/null | grep -E "Correctly Classified Instances|IB1 Classifier" >> $outfile
+```
+This line is in two loops, the inner-most over the seeds and the outer-most over the noise levels. I could just as easily add the extra layer of dynamically calling all three classifiers, however I figured this was fancy enough.  
+*I recommend caution using this script* because I created it with the intention of executing it and walking away. If you run the script and know you need to stop it at some point, do not kick it off in the background. This will force you to either wait for all 600 `java` processes to terminate or chase them all down. *Just be advised* that if you mess something up on your machine, I warned you.
+
+### Parsing Classifier Data
+Currently, I am parsing the output of the automated tests with the `ib-processing` python script. The goal of the script is to automatically parse through the troves of data collected from the classifiers and to graph it. I am currently only collecting and parsing the accuracy data; however, in the future I will collect data on the number of instances saved from the training data.
+```
+classifiers.addDataToClassifier(current_classifier, noise_level, acc)
+```
+The data is parsed out into Classifier objects managed by a Classifiers object. This simplifies the process such that only one line is needed (see above) to hand the data to the classifier. The rest of the program keeps track of where we are in the output file. Once this is completed, I calculate the mean and standard deviation of all the IB1 data with 0% noise, then 1% noise, etc. for all of the classifiers. The graph generated is shown in the next section.
+
+### Results and Discussion
+Below is the graph showing the changes in the Instance-Based classifier performance as there is an increase in noise in the data set.
+
+![Instance-Based Classifier Accuracy with Increasing Noise in Training Datasets](https://github.com/JohnsonClayton/DS-Tools/blob/master/media/ib1-3_noise_graph.png)
+
+The vertical lines represent the standard deviation of the model's accuracy at that level of noise introduced into the data set. As the models are presented, we see that there is little deviation between the IB1 and IB3 classifiers, while the IB2 classifier clearly has degraded in performance as there has been an increase in noise. 
+#### Does this make sense?
+Let's compare the results to Aha's 1991 results.
+
 ## References
 1. Weka Ant Documentation (https://waikato.github.io/weka-wiki/ant/)
 2. Weka Blog (https://waikato.github.io/weka-blog/posts/2018-10-08-making-a-weka-classifier/)
