@@ -69,15 +69,19 @@ The data is parsed out into Classifier objects managed by a Classifiers object. 
 ### Results and Discussion
 Below is the graph showing the changes in the Instance-Based classifier performance as there is an increase in noise in the data set.
 
-![Instance-Based Classifier Accuracy with Increasing Noise in Training Datasets](https://github.com/JohnsonClayton/DS-Tools/blob/master/media/ib1-3_noise_graph.png)
+![Instance-Based Classifier Accuracy with Increasing Noise in Training Datasets](https://github.com/JohnsonClayton/DS-Tools/blob/master/media/ib1-3_accuracy.png)
 
-The vertical lines represent the standard deviation of the model's accuracy at that level of noise introduced into the data set. As the models are presented, we see that there is little deviation between the IB1 and IB3 classifiers, while the IB2 classifier clearly has degraded in performance as there has been an increase in noise. 
+The vertical lines represent the standard deviation of the model's accuracy at that level of noise introduced into the data set. As the models are presented, we see that there is little deviation between the IB1 and IB3 classifiers, while the IB2 classifier clearly has degraded in performance as there has been an increase in noise. In the next graph, we see the changes in memory required across the learners. IB1's memory usage doesn't change at all since its algorithm dictates that it save all the training instances. IB2 and IB3's memory are similar, with IB3 consistently saving more instances than IB2. 
+
+![Instance-Based Classifier Accuracy with Increasing Noise in Training Datasets](https://github.com/JohnsonClayton/DS-Tools/blob/master/media/ib1-3_memory.png)
 #### Does this make sense?
 Let's compare the results to Aha's [5] results shown below.
 ![Aha's 1991 Results](https://github.com/JohnsonClayton/DS-Tools/blob/master/media/aha_results_1991.png)  
-The left-most graph shows the performance of the instance-based learners over a larger range of introduced noise. Additionally, the data collected in this paper shows the mean over 50 runs of each learner as opposed to the 10 presented in this work. In the same noise range, we see similar results in that IB2 is the worst-performing out of the three. However, our results show IB1 outperforming IB3 (even if only slightly). This is not in line with Aha's results. While the implementation of IB3 presented here *may* be flawed or unrepresentative of the learner, the general ideas shown here are still true.  
+The left-most graph shows the performance of the instance-based learners over a larger range of introduced noise. Additionally, the data collected in this paper shows the mean over 50 runs of each learner as opposed to the 10 presented in this work. In the same noise range, we see similar results in that IB2 is the worst-performing out of the three. However, our results show IB1 outperforming IB3 (even if only slightly). Additionally, there is a clear distinction between IB2 and IB3 memory usage in Aha's paper while these results here show IB2 and IB3 performing similarly. These results are not in line with Aha's. 
 
-In Aha's paper, they outline that the goal of IB3 is to  improve noise tolerance and memory allowances. While all of my collected data isn't presented here yet, IB3 tolerates noise significantly better than IB2 and reduces the amount of instances saved from the training dataset by almost 50% compared to IB1, if only at a slight cost in performance. However, further data must be collected to demonstrate these advantages and to better compare the learners with Aha's results.  
+In Aha's paper, they outline that the goal of IB3 is to improve noise tolerance and memory allowances. While all of my collected data isn't presented here yet, IB3 tolerates noise significantly better than IB2 and reduces the amount of instances saved from the training dataset by almost 50% compared to IB1, if only at a slight cost in performance. However, further data must be collected to demonstrate these advantages and to better compare the learners with Aha's results. 
+
+While the implementation of IB3 presented here *may* be flawed or unrepresentative of the learner, the general ideas shown here are still true.  
 
 ## References
 1. Weka Ant Documentation (https://waikato.github.io/weka-wiki/ant/)
