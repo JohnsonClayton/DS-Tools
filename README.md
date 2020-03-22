@@ -4,8 +4,8 @@ Classifiers and scripts made for my Data-Science course
 ## Weka Classifiers
 
 ### Set-up
-A few steps had to be taken in order to be able to add my custom Weka classifier to the program and display. To start, I had to demonstrate the ability to compile and build from Weka's source code (I'm on Linux but I don't the process changes much). This may be acquired at the [mirror](https://github.com/Waikato/weka-3.8) on GitHub or through other channels documented such as [SourceForge](https://sourceforge.net/projects/weka/files/weka-3-8/3.8.4/weka-3-8-4-azul-zulu-linux.zip/download?use_mirror=pilotfiber) (I recommend the latter for reasons we'll get to later). The links I have are for the most up-to-date versions at the time of writing (March 2020).   
-After referencing the Weka documentation, there were a few options served: use Ant, Maven, or an IDE such as IntelliJ/Netbeans/Eclipse. I decided to try Netbeans, against my better judgement. After hours of only complete and total failure(s), I decided to try out the Ant method:  
+A few steps had to be taken in order to be able to add my custom Weka classifier to the program and display. To start, I had to demonstrate the ability to compile and build from Weka's source code (I'm on Linux but I don't believe the process changes much). This may be acquired at the [mirror](https://github.com/Waikato/weka-3.8) on GitHub or through other channels documented such as [SourceForge](https://sourceforge.net/projects/weka/files/weka-3-8/3.8.4/weka-3-8-4-azul-zulu-linux.zip/download?use_mirror=pilotfiber) (I recommend the latter for reasons we'll get to later). The links I have are for the most up-to-date versions at the time of writing (March 2020).   
+After referencing the Weka documentation, there were a few options served: use Ant, Maven, or an IDE such as IntelliJ/Netbeans/Eclipse. I decided to try Netbeans, against my better judgement. After hours of only complete and total failure(s), I decided to try out the Ant method. Below, I have displayed the working directory (wd, just the directory this build command is run in. This will depend on how you installed Weka). The `ant` command should come with any JDK/JRE install, however it *may* have to be downloaded. This is run in the terminal. 
 
 ```
 NOTE  
@@ -17,7 +17,7 @@ This finally worked and created the new `weka.jar` file in the newly-created `di
 
 ### Custom Classifier
 Time to begin the fun! I want to demonstrate the ability to add my own classifier to Weka. This topic is covered in the blog link below, however I will give a brief overview here.  
-I had to find a classifier to mimic for the time being (since this is purely a PoC currently). I chose the `InputMappedClassifier`, found at `weka.classifiers.misc` (or `weka/src/main/java/weka/classifiers/misc`). I created a copy of this classifier named it `HelloWorld` (make sure to change the class name **and** the file name if you're not familiar enough with java). An additional step required is to add this file to the `GenericObjectEditor.props` file found in `weka/gui`. Also, make sure that the `UseDynamic` flag is set to `true` in the `GenericPropertiesCreator.props` file, otherwise your custom classifiers will not be loaded.  
+I had to find a classifier to mimic for the time being (since this is purely a proof of concept, currently). I chose the `InputMappedClassifier`, found at `weka.classifiers.misc` (or `weka/src/main/java/weka/classifiers/misc`). I created a copy of this classifier named it `HelloWorld` (make sure to change the class name **and** the file name if you're not familiar enough with java). An additional step required is to add this file to the `GenericObjectEditor.props` file found in `weka/gui`. Also, make sure that the `UseDynamic` flag is set to `true` in the `GenericPropertiesCreator.props` file, otherwise your custom classifiers will not be loaded.  
 Once all of this is finished, we can compile Weka just like before and re-run the `weka.sh` script. In the image here, we can see the image of the Weka classifiers. 
 
 ![image of HelloWorld classifier in the Weka misc classifier list](https://github.com/JohnsonClayton/DS-Tools/blob/master/media/hw_added.png)
@@ -56,7 +56,7 @@ The next step would be to hand this information to the classifiers dynamically t
 ```
 $ java weka.Run weka.classifiers.lazy.IB1 -t $datafile$noise.arff -s $rand 2>/dev/null | grep -E "Correctly Classified Instances|IB1 Classifier" >> $outfile
 ```
-This line is in two loops, the inner-most over the seeds and the outer-most over the noise levels. I could just as easily add the extra layer of dynamically calling all three classifiers, however I figured this was fancy enough.  
+This line is in two loops, the inner-most over the seeds and the outer-most over the noise levels. I could just as easily add the extra layer to dynamically call all three classifiers, however I figured this was fancy enough.  
 *I recommend caution using this script* because I created it with the intention of executing it and walking away. If you run the script and know you need to stop it at some point, do not kick it off in the background. This will force you to either wait for all 600 `java` processes to terminate or chase them all down. *Just be advised* that if you mess something up on your machine, I warned you.
 
 ### Parsing Classifier Data
