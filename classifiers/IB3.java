@@ -1,21 +1,6 @@
-/*  Instance-based Classifier 2 implemented by Clayton Johnson
+/*  Instance-based Classifier 3 implemented by Clayton Johnson
  *    as described in Aha's Paper: Instance-Based Learning Algorithm
  *
- *
- *   IB-2:
- *   ------------------------
- *   CD = null
- *   for each x in x_train do
- *   1. for each y in CD do
- *     Sim[y] <- Similarity(x, y)
- *   2. y_max <- some y in CD with maximal Sim[y]
- *   3. if class(x) == class(y_max)
- *      then classification <- correct
- *      else
- *        classification <- incorrect
- *        CD <- CD unioned {x}
- *
- *    
  *
  */
 
@@ -160,12 +145,13 @@ public class IB3 extends AbstractClassifier {
 		// Calculate lower bound of acc
 		double p = p0/(1.0*n);
 		double lba = 0;
-		lba = (p + Math.pow(z, 2)/(2*n) - z*(Math.sqrt( (p*(1-p)/n) + Math.pow(z, 2)/(4*Math.pow(n, 2))))) / (1 + Math.pow(z, 2)/n) ; 
+		double q =  (p*(1.0-p)/n) + Math.pow(z, 2)/(4.0*Math.pow(n, 2));
+		lba = p + Math.pow(z, 2)/(2.0*n) - z*(Math.sqrt(q)) / (1.0 + Math.pow(z, 2)/ (1.0*n) ); 
 
 		// Calculate upper bound of freq			
 		double ubf = 0;
 		p = (1.0*same_class) / (1.0*conceptDescription.numInstances());
-		ubf = (p + Math.pow(z, 2)/(2*n) + z*(Math.sqrt( (p*(1-p)/n) + Math.pow(z, 2)/(4*Math.pow(n, 2))))) / (1 + Math.pow(z, 2)/n) ; 
+		ubf = (p + Math.pow(z, 2)/(2.0*n) + z*(Math.sqrt( (p*(1.0-p)/n) + Math.pow(z, 2)/(4.0*Math.pow(n, 2))))) / (1 + Math.pow(z, 2)/(1.0*n)) ; 
 		if (lba >= ubf) {
 			acceptable = false;
 		}
@@ -180,12 +166,13 @@ public class IB3 extends AbstractClassifier {
 		// Calculate upper bound of acc
 		double p = p0/(1.0*n);
 		double uba = 0;
-		uba = (p + Math.pow(z, 2)/(2*n) + z*(Math.sqrt( (p*(1-p)/n) + Math.pow(z, 2)/(4*Math.pow(n, 2))))) / (1 + Math.pow(z, 2)/n) ; 
+		double q =  (p*(1.0-p)/n) + Math.pow(z, 2)/(4.0*Math.pow(n, 2));
+		uba = p + Math.pow(z, 2)/(2.0*n) + z*(Math.sqrt(q)) / (1.0 + Math.pow(z, 2)/ (1.0*n)) ; 
 
 		// Calculate lower bound of freq			
 		double lbf = 0;
 		p = (1.0*same_class) / (1.0*conceptDescription.numInstances());
-		lbf = (p + Math.pow(z, 2)/(2*n) - z*(Math.sqrt( (p*(1-p)/n) + Math.pow(z, 2)/(4*Math.pow(n, 2))))) / (1 + Math.pow(z, 2)/n) ; 
+		lbf = (p + Math.pow(z, 2)/(2.0*n) - z*(Math.sqrt( (p*(1.0-p)/n) + Math.pow(z, 2)/(4.0*Math.pow(n, 2))))) / (1.0 + Math.pow(z, 2)/(1.0*n)) ; 
 		if (uba < lbf) {
 			poor = true;
 		}
@@ -229,7 +216,13 @@ public class IB3 extends AbstractClassifier {
 		return neighbours;
 	}
 
-	// This method will create + train the classifier
+
+	/* Instance-Based Classifier 3
+        *  
+        *  Training Method
+        *    This method is called to train the classifier on a given set of training data.
+        *   This is where the algorithms are implemented for the most part.
+        */
 	public void buildClassifier(Instances trainingData) throws Exception {
 		trainingData = new Instances(trainingData);
 		trainingData.deleteWithMissingClass();
@@ -240,12 +233,14 @@ public class IB3 extends AbstractClassifier {
 		m_NNSearch.setInstances(new Instances(trainingData, 1, 1));
 		initCD(trainingData);
 
+		int k=0;
+
 		// Start the training...
 		for (Instance train_x : trainingData) {
 			// Only take the neighbours will acceptable statistics
 			Instances neighbours = getAcceptableNeighbours(train_x);
 			if (conceptDescription.numInstances() <= 0) {
-				m_NNSearch.setInstances(new Instances(trainingData, 1, 1));
+				m_NNSearch.setInstances(new Instances(trainingData, k, 1));
 				initCD(trainingData);
 			}
 			else if (neighbours.numInstances() == 0) {
@@ -303,9 +298,15 @@ public class IB3 extends AbstractClassifier {
 			}
 
 			m_NNSearch.setInstances(conceptDescription);
+			k++;
 		}
 	}
 
+	/* Testing/Validation Method
+	*    This method is called when the calling class (such as Run) wants to evaluate the
+        *   performance of this learner on a testing/validation set. As such, we don't have
+        *   access to the correct classification label in this method.
+        */
 	public double[] distributionForInstance(Instance testInstance) throws Exception {
 		m_NNSearch.addInstanceInfo(testInstance);
 
