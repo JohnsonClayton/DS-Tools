@@ -39,7 +39,7 @@ import java.util.ArrayList;
 
 public class PRISM extends AbstractClassifier {
 
-	private class Rule {
+	private class Rule implements Serializable {
 		// Actions depend on the data type of the given relationship
 		private int attribute = 0;
 		private String value = null;
@@ -68,6 +68,25 @@ public class PRISM extends AbstractClassifier {
 			return this.classification;
 		}
 
+		public int getSuccesses() {
+			return this.matches;
+		}
+
+		public boolean instanceMatches(Instance instance) {
+			boolean ret = false;
+			Attribute attr;
+			String val;
+			for (int i = 0; i < instance.numAttributes(); i++) {
+				attr = instance.attribute(i);
+				val = instance.stringValue(attr);
+
+				if (this.attribute == i && this.value == val) {
+					ret = true;
+				}
+			}
+			return ret;
+		}
+
 		public boolean equals(Rule rule) {
 			boolean ret = false;
 			if (rule.getAttribute() == this.attribute && rule.getValue() == this.value && rule.getClassification() == this.classification)
@@ -81,7 +100,7 @@ public class PRISM extends AbstractClassifier {
 		}
 	}
 
-	private class Rules {
+	private class Rules implements Serializable {
 		private ArrayList<Rule> rules;
 
 		public Rules() {
@@ -159,30 +178,79 @@ public class PRISM extends AbstractClassifier {
 
 	private Rules rules = new Rules();
 
+	private void filterOff(Attribute class_attr, int class_number, Instances instances) {
+		// Select the a_x for which p(o_n | a_x) is a maximum and create a subset of the training set comprising all the instances which contain the selected a_x
+		// 	Find the rule with the highest probability
+		Rule rule = null;
+		for (Rule rule1 : this.rules.getRules()) {
+			if ( (int) (class_attr.indexOfValue(rule1.getClassification())) == class_number && (rule == null ||  rule1.getSuccesses() > rule.getSuccesses()) ) {
+				rule = rule1;
+			}
+		}
+
+		//System.out.println("Highest for classification " + i + " is: " + rule.toString());
+
+		//	Create a subset of the training set comprising all the instances which contain the selected a_x
+		Instances subset = null;
+		for (int j=0; j<instances.numInstances(); j++) {
+			// If the instance matches with the rule, then add it to the subset
+			if (rule.instanceMatches(instances.get(j))) {
+				if (subset == null) {
+					subset = new Instances(instances, j, 1);
+				} else {
+					subset.add(instances.get(j));
+				}
+			}
+		}
+		if (subset != null) {
+			System.out.println("Size of subset is: " + subset.numInstances() + " out of " + instances.numInstances());
+		} else {
+			System.out.println("The subset was never made...");
+		}
+	}
+
 	// Trains the classifier and builds the rule set
 	public void buildClassifier(Instances trainingData) throws Exception {
 
+		// Calculate the probability of occurrence p(o_n | a_x) of the classification o_n for each attribute-value pair a_x
 		for (Instance instance : trainingData) {
 			// Add all of the rules to the rule set
 			rules.addRules( createRulesFromInstance(instance) );
 		}
 		
-		//for (Instance instance : trainingData) {
-			// Calculate the probability of occurrence p(o_n | a_x) of the classification o_n for each attribute-value pair a_x
+		// For each classification	
+		Instance instance = trainingData.firstInstance();
+		Attribute class_attr = instance.classAttribute();
+		System.out.println(class_attr);
+		int class_count = class_attr.numValues();
+		for (int i=0; i<class_count; i++) {
 
-			// 	Find the rule with the highest probability
-			
-
-			// Select the a_x for which p(o_n | a_x) is a maximum and create a subset of the training set comprising all the instances which contain the selected a_x
+			filterOff(class_attr, i, trainingData);
 			// Repeat steps 1-2 for this subset until it contains only instances of class o_n. The induced rule is a conjunction of all the attribute-value pairs used in creating the homogeneous subset.
 			// Remove all instances covered by this rule from the training set.
 			// Repeat steps 1-4 until all instances of class o_n have been removed
-		//}	
+		}	
 
 	}
 
 	public double classifyInstance(Instance instance) {
-		return 0.5;
+		//String attr1 = "no-recurrence-events";
+		//String attr2 = "recurrence-events";
+		//System.out.println(instance.classAttribute().indexOfValue(attr1));
+		//System.out.println(instance.classAttribute().indexOfValue(attr2));
+		/*double ret = -1.0;
+		for (Rule rule : this.rules.getRules()) {
+			if (rule.instanceMatches(instance)) {
+				ret = 1.0*instance.classAttribute().indexOfValue(rule.getClassification());
+			}
+		}*/
+		Rule rule = null;
+		for (Rule rule1 : this.rules.getRules()) {
+			if ( (rule1.instanceMatches(instance)) && (rule == null ||  rule1.getSuccesses() > rule.getSuccesses()) ) {
+				rule = rule1;
+			}
+		}
+		return 1.0*instance.classAttribute().indexOfValue(rule.getClassification());
 	}
 
 	public String toString() {
