@@ -36,6 +36,9 @@ import weka.core.Utils;
 import java.io.Serializable;
 import java.util.Enumeration;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class PRISM extends AbstractClassifier {
 
@@ -94,6 +97,11 @@ public class PRISM extends AbstractClassifier {
 			return ret;
 		}
 
+		//@Override
+		//public int compareTo(Rule rule) {
+		//	return Integer.compare(this.matches, rule.getSuccesses());
+		//}
+
 		public String toString() {
 			String output = this.attribute + "\t=>\t" + this.value + "\t|\t" + this.classification + "(" + this.matches + ")";
 			return output;
@@ -110,6 +118,10 @@ public class PRISM extends AbstractClassifier {
 		public Rules(Rule rule) {
 			this.rules = new ArrayList<Rule>();
 			this.rules.add(rule);
+		}
+
+		public void setRules(List<Rule> _rules) {
+			this.rules = (ArrayList<Rule>)_rules;
 		}
 
 		public int containsRule(Rule rule) {
@@ -230,7 +242,12 @@ public class PRISM extends AbstractClassifier {
 			// Remove all instances covered by this rule from the training set.
 			// Repeat steps 1-4 until all instances of class o_n have been removed
 		}	
-
+		//this.rules.setRules(Collections.sort(this.rules.getRules()));
+		Collections.sort(this.rules.getRules(), new Comparator<Rule>() {
+			public int compare(Rule rule1, Rule rule2) {
+				return Integer.compare(rule1.getSuccesses(), rule2.getSuccesses());
+			}
+		});
 	}
 
 	public double classifyInstance(Instance instance) {
