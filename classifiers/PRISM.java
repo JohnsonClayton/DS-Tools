@@ -221,7 +221,7 @@ public class PRISM extends AbstractClassifier {
 				attr = instance.attribute(i);
 				val = instance.stringValue(attr);
 				for (int j = 0; j < this.attributes.size(); j++) {
-					if (this.attributes.get(j) != i || this.values.get(j) != val) {
+					if (this.attributes.get(j) != i && this.values.get(j) != val) {
 						ret = false;
 					}
 				}
@@ -238,12 +238,12 @@ public class PRISM extends AbstractClassifier {
 		}
 
 		public String toString() {
-			String output = "IF ";
+			String output = "If ";
 			output += this.attributes.get(0) + " = " + this.values.get(0) + ",\n";
 			for (int i=1; i<this.attributes.size()-1 ; i++) {
-				output += "   and " + this.attributes.get(i) + " = " + this.values.get(i) + ",\n";
+				output += "   and " + this.attributes.get(i) + " = " + this.values.get(i) + "\n";
 			}
-			output += "   and " + this.attributes.get(this.attributes.size()-1) + " = " + this.values.get(this.attributes.size()-1) + " : " + this.classification + "\n";
+			output += "   and " + this.attributes.get(this.attributes.size()-1) + " then " + this.values.get(this.attributes.size()-1) + " : " + this.classification + "\n";
 			return output;
 
 		}
