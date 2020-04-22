@@ -154,6 +154,11 @@ public class PRISM extends AbstractClassifier {
 			for (Rule rule : rules.getRules()) 
 				addRule(rule);
 		}
+		
+		public void addRules(ArrayList<Rule> rules) {
+			for (Rule rule : rules) 
+				addRule(rule);
+		}
 
 		public void remove(Rule rule) {
 			this.rules.remove(rule);
@@ -221,14 +226,14 @@ public class PRISM extends AbstractClassifier {
 				attr = instance.attribute(i);
 				val = instance.stringValue(attr);
 				for (int j = 0; j < this.attributes.size(); j++) {
-					if (this.attributes.get(j) != i && this.values.get(j) != val) {
+					if ( this.attributes.get(j) == i && this.values.get(j) != val) {
 						ret = false;
+						//System.out.println("======================");
+						//System.out.println((i) + " matches to " + this.attributes.get(j));
+						//System.out.println(val + " doesn't match to " + this.values.get(j) + " : " + ret);
 					}
 				}
 
-				//System.out.println("======================");
-				//System.out.println(i + " matches to " + this.attribute);
-				//System.out.println(val + " matches to " + this.value + " : " + ret);
 			}
 			return ret;
 		}
@@ -272,7 +277,7 @@ public class PRISM extends AbstractClassifier {
 	private ArrayList<DerivedRule> derived_rules = new ArrayList<DerivedRule>();
 	private ArrayList<Rule> rules_accumulated = new ArrayList<Rule>();
 
-	private void filterOff(Attribute class_attr, int class_number, Instances instances) {
+	private Instances filterOff(Attribute class_attr, int class_number, Instances instances) {
 		// If there is only one class in instances, then we should return
 		Attribute class_at;
 		String classification;
@@ -286,10 +291,6 @@ public class PRISM extends AbstractClassifier {
 		//System.out.println("Printing classifications...");
 		//System.out.println(classifications);
 		//System.out.println("...End classifications");
-		if (classifications.size() == 1) {
-			derived_rules.add(new DerivedRule(rules_accumulated));
-			return;
-		}
 		
 
 
@@ -315,15 +316,40 @@ public class PRISM extends AbstractClassifier {
 				} else {
 					subset.add(instances.get(j));
 				}
+				instances.delete(j);
 			}
+		}
+		if (classifications.size() == 1) {
+			derived_rules.add(new DerivedRule(rules_accumulated));
+			return subset;
 		}
 		rules_accumulated.add(rule);
 		rules.remove(rule);
 		if (subset != null) {
 			//System.out.println("Size of subset is: " + subset.numInstances() + " out of " + instances.numInstances());
 			filterOff(class_attr, class_number, subset);
+
+			
 			derived_rules.add(new DerivedRule(rules_accumulated));
+			rules.addRules(rules_accumulated);
+
+			//Remove the instances this rule applies to
+			//instances.remove(subset);			
+			return subset;
+		} else {
+			return null;
 		}
+	}
+
+	public boolean classExistsInInstances(int class_num, Instances instances) {
+		boolean ret = false;
+
+		for (Instance instance : instances) {
+			// If the instance has the class that we see with class_num, then ret = true
+			if (instance.classValue() == class_num) ret = true;
+		}
+
+		return ret;
 	}
 
 	// Trains the classifier and builds the rule set
@@ -340,10 +366,20 @@ public class PRISM extends AbstractClassifier {
 		Attribute class_attr = instance.classAttribute();
 		//System.out.println(class_attr);
 		int class_count = class_attr.numValues();
+		int last_size = 0, current_size = 1;
+		Instances subset;
 		for (int i=0; i<class_count; i++) {
-
-			filterOff(class_attr, i, trainingData);
+			// Loop until all instances from this class are removed
+			while(classExistsInInstances(i, trainingData)) {
+				last_size = trainingData.numInstances();
+				subset = filterOff(class_attr, i, trainingData);
+				current_size = trainingData.numInstances();
+				if(current_size == last_size) break;
+			}
 		}	
+
+
+		// This was used to sort the rules by those most commonly applicable, however this may be unnecessary now
 		Collections.sort(this.rules.getRules(), new Comparator<Rule>() {
 			public int compare(Rule rule1, Rule rule2) {
 				return Integer.compare(rule2.getSuccesses(), rule1.getSuccesses());
@@ -352,26 +388,20 @@ public class PRISM extends AbstractClassifier {
 	}
 
 	public double classifyInstance(Instance instance) {
-		//String attr1 = "no-recurrence-events";
-		//String attr2 = "recurrence-events";
-		//System.out.println(instance.classAttribute().indexOfValue(attr1));
-		//System.out.println(instance.classAttribute().indexOfValue(attr2));
-		/*double ret = -1.0;
-		for (Rule rule : this.rules.getRules()) {
-			if (rule.instanceMatches(instance)) {
-				ret = 1.0*instance.classAttribute().indexOfValue(rule.getClassification());
-			}
-		}*/
 		if(derived_rules.isEmpty()) {
-			return 0.0;
+			return 1.0;
 		} else {
-			DerivedRule rule = derived_rules.get(0);
+			DerivedRule rule = null; // = derived_rules.get(0);
 			for (DerivedRule rule1 : derived_rules) {
 				if (rule1.instanceMatches(instance)) {
 					rule = rule1;
 				}
 			}
-			return 1.0*instance.classAttribute().indexOfValue(rule.getClassification());
+
+			if (rule == null) 
+				return 1.0;
+			else
+				return 1.0*instance.classAttribute().indexOfValue(rule.getClassification());
 		}
 	}
 
